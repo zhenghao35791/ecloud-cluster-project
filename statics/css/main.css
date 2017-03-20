@@ -1,0 +1,936 @@
+html,body{
+    margin:0px;
+    height:100%;
+}
+select {
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+    color: #555;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    outline: none;
+}
+input[type=text], input[type=password], input[type=search] {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 210px;
+    outline: none;
+    padding: 8px;
+    color: #555;
+    line-height: 16px;
+    font-size: 14px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+body{
+    font-family: "Microsoft YaHei","Hiragino Sans GB";!important
+overflow:hidden;
+    margin:0;
+    padding:0;
+    height:100%;
+    color: #555;
+    font-size:12px !important;
+}
+label {
+    font-weight: normal !important;
+}
+select:hover {
+    border: 1px solid #2d92ca;
+}
+
+input[type=text]:hover, input[type=password]:hover, input[type=search]:hover {
+    border: 1px solid #2d92ca;
+}
+.btn:hover {
+    background: #2980b9;
+}
+.btn {
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 8px 15px;
+    margin-right: 8px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    background-color: #2d92ca;
+}
+/*???????žD?*/
+.rds-tab{
+    height:66px;
+    width: 100%;
+    border-bottom: 1px solid #F2F2F2;
+    text-align: center;
+    font-weight:500;
+    font-size:14px;
+    margin-right:20px;
+    margin-top:15px;
+    font-family: "Microsoft YaHei", "Hiragino Sans GB";
+}
+.rds-tab a{
+    height: 21px;
+    padding: 34px 10px 30px 0;
+    line-height: 25px;
+    float: left;
+    font-family: "Microsoft YaHei", "Hiragino Sans GB";
+    display:block;
+    width: 90px; /*90PX/1087*/
+    color: #555;
+}
+.rds-tab a{
+    text-decoration:none;
+}
+.rds-tab .rds-tab-active{
+    border-bottom: 2px solid #3399E5;
+    color: #3399E5;
+}
+.panel>.panel-heading.panel-heading {
+    background-color:rgb(241, 245, 248);
+    height:42px;
+}
+#rds-board tr{
+    height: 39px;/*50PX/1087*/
+    line-height: 40px;
+    border-bottom: 1px solid #E2E2E2;
+    font-size:12px;
+}
+#rds-board td{
+    height: 39px;/*50PX/1087*/
+    line-height: 40px;
+}
+#rds-board td{
+    text-indent:7px;
+}
+.index-data{
+    color:#63869E;
+}
+/*???????????*/
+
+/*????????žD?*/
+#create_config_form li{
+    margin-left:0;
+}
+.rds-content-4-head,.rds-content-5-head,.rds-content-monitor-head{
+    padding:20px 0 19px 0;
+}
+.rds-btn-instance{
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 8px 15px;
+    margin-right: 8px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    background-color: #3399E5;
+    line-height: 18px;
+
+
+
+    /*
+         padding:0 15px;
+        margin: 3px 5px 3px 0;
+        height: 34px;
+     */
+    font-family: "Microsoft YaHei", "Hiragino Sans GB";
+    border: none;
+
+
+}
+
+.refresh-btn{
+    width:33px;
+    background: url(../images/rds/rds_refresh.png) center no-repeat;
+    background-color: #95A5A6;
+}
+.refresh-btn:hover{
+    background-color: #2980B9;
+}
+.config-row,.content-backup,.content-privilege{
+    height:50px;
+    text-align: left;
+    border-bottom: 1px solid #E2E2E2;
+}
+.config-row:hover,.content-backup:hover,.content-privilege:hover,.config-config-row:hover{
+    background-color:rgb(229, 240, 250);
+}
+.config-row p,.content-privilege p {
+    height:40px;
+    padding-top:16px;
+    overflow-x:auto;
+}
+.content-privilege p {
+    height:40px;
+    padding-top:15px;
+    overflow-x:auto;
+}
+
+.content-backup p{
+    height:40px;
+    padding-top:16px;
+    overflow-x:auto;
+}
+#rds-content-4-body .config-config-row{
+    height:50px;
+    text-align: left;
+    border-bottom: 1px solid #E2E2E2;
+}
+#rds-content-4-body .config-config-row p{
+    margin-top:15px;
+    overflow-x:auto;
+}
+.config-row .btn-group a{
+    margin-right:10px;
+}
+
+/* === Form Typography === */
+.contact_form li {
+    padding: 8px;
+    border: none;
+    position: relative;
+    margin-top:5px;
+    margin-left:50px;
+}
+.contact_form label {
+    width: 110px;
+    display: inline-block;
+    margin-right: 15px;
+    text-align: right;
+    font-size: 14px;
+    font-family: "Microsoft YaHei","Hiragino Sans GB";
+}
+#contact_form select, #creatBackup_form select, #create_config_form select, #contact_temp_form select,#addUser_form select {
+    width: 278px;
+    height: 32px;
+    padding: 5px 8px;
+}
+.contact_form input {
+    height: 32px;
+    padding: 5px 8px;
+    width: 278px;
+}
+.rdsTable_red_star {
+    color: #ea5200;
+    margin-right: -9px;
+    float: right;
+}
+.btn-juzhong {
+    margin-left: 15.5%;
+}
+#confirm_cancel {
+    background-color: #95A5A6;
+}
+#config_firstLine {
+    background-color: #F1F1F1;
+    color: #7F7F7F;
+}
+#compare_config_color td {
+    width: 189px;
+    font-size: 14px;
+    height: 55px;
+    text-align: center;
+}
+#config_image {
+    background: url(../images/rds/rds_config_image.png) center no-repeat;
+}
+.dialog_msg_table td {
+    /* border: dashed #7F7F7F; */
+    /* border-width: 0px 1px 1px 0px; */
+    /* padding-left: 10px; */
+}
+#compare_config_color {
+    background-color: #fff;
+}
+.configLi {
+    margin: 0 auto;
+    color: #2D91C9;
+    border: none;
+}
+.config_name {
+    color: #7F7F7F;
+}
+.dialog_msg_table{
+    border-collapse:collapse;
+    border:dashed #7F7F7F;
+    border-width:1px 0px 0px 1px;
+}
+.dialog_msg_table td{
+    border:dashed #7F7F7F;
+    border-width:0px 1px 1px 0px;
+    padding-left:10px;
+}
+.config-desc{
+    float:left;
+}
+.config-textarea{
+    width:278px;
+    height:90px;
+    padding:5px 8px;
+    margin-left:2px;
+}
+/*????????????*/
+/*?????žD?*/
+.rds-movebox {
+    background-color: #f1f5f8;
+    left: 2000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(100%, 0px);
+    height: 100%;
+    z-index: 2;
+    display:none;
+}
+.rds-movebox.visible {
+    transform: translate(0px, 0px);
+    transition: transform 500ms ease 0s;
+    display:block;
+}
+
+.rds-movebox.invisible {
+    transform: translate(100%, 0px);
+    transition: transform 500ms ease 0s;
+    display:none;
+}
+.invisible {
+    display:none;
+}
+#rds-movebox .rds-tab-current {
+    background-color: #fff !important;
+    color: #555 !important;
+}
+.rds-tabtitle {
+    overflow: hidden;
+    background-color: #f1f5f8;
+    font-size: 12px;
+}
+
+#rds-movebox .rds-tabtitle a {
+    border: none;
+    color:#555;
+    text-decoration:none;
+}
+
+.boxclose {
+    overflow: hidden;
+
+}
+
+.rds-tabtitle li a {
+    float: left;
+    display: block;
+    margin: 10px 0 0 10px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px 3px 0 0;
+    padding: 7px 24px;
+}
+
+/*movebox????????*/
+.add-user {
+    margin: 0px 0 0 20px;
+    display: block;
+    height: 35px;
+    width: 85px;
+    font-family: "Microsoft YaHei", "Hiragino Sans GB";
+    font-size: 12px;
+    border: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    background-color: #3399E5;
+    color: #FFFFFF;
+    line-height:35px;
+    cursor: pointer;
+
+}
+.user-table {
+    margin: 10px 20px;
+    width: 98%;
+    table-layout: fixed;
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-align: center;
+
+}
+.user-table-class{
+    height: 100%;
+    background: #fff;
+}
+#user_sm_table #table-first,#database_sm_table  #table-first,#autoprotect_sm_table #table-first{
+    height: 40px;
+    line-height: 40px;
+    background-color: #f1f5f8;
+}
+#user_sm_table tr {
+    height: 50px;
+    line-height: 50px;
+}
+#user_sm_table td {
+    padding: 2px;
+    border-bottom: 1px solid #E2E2E2;
+}
+/*movebox??????????*/
+.add-database{
+    margin: 0px 0 0 20px;
+    width: 96px;
+    height: 35px;
+    display: block;
+    font-family: "Microsoft YaHei", "Hiragino Sans GB";
+    border: none;
+    font-size: 12px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    background-color: #3399E5;
+    color: #FFFFFF;
+    line-height:35px;
+    cursor: pointer;
+}
+#database_sm_table td,#autoprotect_sm_table td{
+    padding: 2px;
+    border-bottom: 1px solid #E2E2E2;
+}
+#database_sm_table tr,#autoprotect_sm_table tr{
+    height:50px;
+    line-height:20px;
+}
+#database_sm_table #table-first, #autoprotect_sm_table #table-first{
+    height:40px;
+    line-height:40px;
+}
+/*movebox?§Ó????????*/
+#rds-contentsm-4 input {
+    float: left;
+    margin-right: 12px;
+}
+.rds-contentsm{
+    background: #fff;
+    padding: 20px;
+}
+.add-config {
+    padding: 8px 8px !important;
+    /*  display: block;
+     width: 96px;
+     height: 35px;
+     font-family: "Microsoft YaHei", "Hiragino Sans GB";
+     border: none;
+     font-size: 12px;
+     -moz-border-radius: 3px;
+     -webkit-border-radius: 3px;
+     border-radius: 3px;
+     text-align: center;
+     background-color: #3399E5;
+     color: #FFFFFF;
+     margin:0 12px 0 20px;
+     line-height:35px;
+     cursor: pointer; */
+}
+#rds-contentsm-4 p {
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    background-color: #CFEAF8;
+    padding-right: 15px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+#cnofig_sm_table tr,#instance-table-3 tr{
+    height:50px;
+    line-height:50px;
+}
+#instance-table-1,#instance-table-0,#instance-table-2,#backup-table-0,#backup-table-1{
+    text-indent:6px;
+}
+#instance-table-3-panel,#instance-table-4-panel{
+    margin: 10px 20px;
+    width: 98%;
+    table-layout: fixed;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+/* #instance-table-3 tbody td{
+	padding-left:50px;
+	text-align:center;
+} */
+/*?????????*/
+/*??????žD?*/
+.backupsearch-button{
+    background: url(../images/rds/rds_search.png) center no-repeat;
+    width:33px;
+    height:33px;
+    display:inline-block;
+    border: none;
+    margin-left: -35px;
+}
+.backupsearch-button:hover{
+    background: url(../images/rds/rds_search_hover.png) center no-repeat;
+    border: none;
+}
+.config-row input[type="checkbox"]:focus, .content-backup input[type="checkbox"]:focus{
+    outline:none;
+}
+.contact_form .contact_form_head {
+    margin-left: 75px;
+    color: #379BDB;
+    font-size: 14px;
+}
+#creatBackup_form{
+    font-size:14px;
+    position: relative;
+    margin:0 auto;
+    margin-top:10px;
+}
+
+/*??????????*/
+/*?????? ???*/
+.content-privilege-actionfont{
+    margin-right:15px;
+}
+.grant_username{
+    float:left;
+    margin-left:14px;
+    margin-bottom:20px;
+}
+.ungranted_db{
+    display:inline-block;
+    display:inline-block !important;
+    margin-left:37px;
+    width:180px;
+    margin-bottom:10px;
+    border:solid 1px #999;
+    vertical-align: middle;
+    height:173px;
+}
+.grant_action{
+    display:inline-block !important;
+    width: 75px;
+    text-align:center;
+    height:183px;
+    padding-top:60px;
+    height:173px;
+}
+.granted_db{
+    display:inline-block;
+    display:inline-block !important;
+    width:380px;
+    margin-bottom:10px;
+    border:solid 1px #999;
+    vertical-align: middle;
+    height:173px;
+}
+.shouquanDB{
+    display:inline-block;
+    display:inline-block !important;
+}
+.grant_title{
+    background: #f3f3f3;
+    color: #bbb;
+    padding-left: 5px;
+    padding-right: 5px;
+    height:32px;
+    line-height:32px;
+    border:none;
+}
+.ungranted_ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px
+}
+.granted_ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px
+}
+.ungranted_li{
+    height: 32px;
+    line-height: 32px;
+    white-space: nowrap;
+    text-indent: 8px;
+    border-bottom:1px solid #DDD;
+}
+.granted_li{
+    height: 32px;
+    line-height: 32px;
+    white-space: nowrap;
+    text-indent: 8px;
+    border-bottom:1px solid #DDD;
+}
+.btn_db_add,.btn_db_remove{
+    color:#039;
+}
+.btn_db_add :hover,.btn_db_remove :hover{
+    text-decoration:underline;
+}
+.grant_active{
+    background-color:#2980B9;
+}
+.eachDbClass{
+
+}
+#user_sm_table td a {
+    font-size: 12px;
+    padding: 4px 12px;
+    height: 24px;
+    line-height: 14px;
+    color: #06C;
+    text-shadow: none;
+    border: none;
+}
+.suyan-selector{
+    width: 100%;
+    height: 139px;
+    background-color: #FFF;
+    overflow: auto;
+}
+#grant_user_div{
+    margin-left:60px;
+    clear:both;
+}
+.grant-Db-label{
+    clear:left;
+    float:left;
+    margin-bottom:-15px;
+    font-weight:bold;
+
+}
+.grant-user-label{
+    float:left;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+.eachDbClass{
+    height:30px;
+    line-height:20px;
+}
+.rds-scroll{
+    position:absolute;
+    overflow:scroll;
+}
+.paddingrighttiny{
+    clear:both;
+    padding-right:50px;
+}
+.clearboth{
+    clear:both;
+}
+/*?????? ????*/
+.rds-signin input {
+    display: inline-block;
+    width: 250px;
+    height: 30px;
+    margin: 10px;
+    font-size: 14px;
+    border: 1px solid #9da4ae;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, .08);
+    outline: 0;
+    color: #fff;
+    padding:8px;
+}
+.rds-signin .btn {
+    margin: 10px 10px;
+    width: 232px;
+    display: inline-block;
+    padding: 12px 20px;
+    font-family: Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    border: 0 none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.rds-sign-logo img {
+    width: 110px;
+    height: 40px;
+}
+.rds-bg {
+    /*     background: url("../images/rds/rds-signin-02.jpg") center center no-repeat fixed;
+     */
+    background-color:#34495e;
+    width:100%;
+    height:100%;
+    z-index:999;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", sans-serif;
+    font-size: 12px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-tap-highlight-color: transparent;
+}
+.rds-signin {
+    width: 300px;
+    height: 400px;
+    margin: 120px auto;
+}
+.monitor-warning{
+    color:#999;
+    padding-left:40px;
+    display:inline-block;
+    /*font-style:italic*/
+}
+.textLeft{
+    text-align:left;
+}
+
+#inputMissionForm select,#inputMissionForm textarea,#inputMissionForm .inputClass{
+    width:100%;
+}
+#inputMissionForm .form-group{
+    padding:3px;
+}
+.selectedRow{
+    background-color:RGB(231,247,255);
+}
+#rds-content-7-body .btn{
+    padding:5px 2px;
+    font-size:10px;
+    margin-right:11px;
+}
+#rds-content-7-body .btn-warning {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+
+.log-modal-body{
+    padding:15px;
+    font-size:14px;
+
+}
+
+
+/*ÐÂÔöuiÐÞ¸Ä*/
+.index_chart{
+    display:inline-block;
+    border-radius: 2px;
+    margin:30px 0px 40px 0px;
+    font-size: 14px;
+}
+.index_chart p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height:50px;
+    padding-left:10px;
+}
+.index_chart_title{
+    height:50px;
+    background-color: rgba(229, 240, 250, 1);
+}
+.index_chart_body{
+    height:320px;
+    padding-bottom:20px;
+}
+.index_chart_border{
+    border: 1px solid rgba(233, 238, 244, 1);
+}
+.pane{
+    height: 100%;
+    padding: 40px 30px;
+    min-width: 900px;
+}
+.content-instance-title p{
+    line-height:40px;
+    height: 40px;
+    padding: 0 8px;
+    border-right: 1px solid #fff;
+    margin:0 !important;
+}
+.content-instance-title {
+    height:40px;
+    background-color: rgb(229, 240, 250);
+    padding-left:9px;
+}
+
+.content-config-title p,.content-privilege-title p{
+    line-height:40px;
+    height: 40px;
+    padding: 0 8px;
+    border-right: 1px solid #fff;
+    margin:0 !important;
+}
+.content-config-title,.content-privilege-title {
+    height:41px;
+    background-color: rgb(229, 240, 250);
+    padding-left:9px;
+}
+.rds-movebox-panel{
+    margin: 0px;
+    padding: 0 20px;
+    background-color: #f1f5f8;
+}
+.rds-content-2-body,.rds-content-3-body{
+    height:100%;
+    position:relative;
+}
+.rds-content{
+    height:100%;
+}
+.rds-content-2-body .row,.rds-content-3-body .row{
+    margin:0;
+}
+.rds-tabtitle li{
+    float:left;
+}
+.rds-tabtitle{
+    margin:0;
+    padding:0;
+}
+#rds-contentsm-0 .panel,#rds-contentsm-0 .panel-heading,#rds-contentsm-0 .table td{
+    border:0;
+}
+#rds-contentsm-3 .panel,#rds-contentsm-3 .panel-heading,#rds-contentsm-3 .table td,#rds-contentsm-3 .table tr{
+    border:0;
+}
+.movebox-backup .panel,.movebox-backup .panel-heading,.movebox-backup .table td{
+    border:0;
+}
+.movebox-backup .table tbody td:first-child {
+    width: 150px !important;
+}
+#rds-contentsm-0 .table tbody td:first-child {
+    width: 150px !important;
+}
+#instance-table-4-panel thead{
+    background-color: #f1f5f8;
+
+}
+/* #user_sm_table td,#database_sm_table td{
+	border:0;
+} */
+#table-first td{
+    border:0;
+}
+.rds-contentsm .panel-heading{
+    font-size:14px;
+}
+.content-backup a{
+    height:0px;
+    width:0px;
+}
+
+.test{
+    float:left;
+}
+.invisible-method {
+    display:none;
+}
+#ip_info {
+    width: 278px;
+    font-size: 10px;
+    font-family: "Microsoft YaHei","Hiragino Sans GB";
+    text-align: left;
+    margin-top: -13px;
+    font-style: italic;
+    color: #7e7e7e;
+}
+.privilege-box{
+    margin-top:20px !important;
+}
+.rds-boxclose {
+    float: left;
+    display: inline-block;
+    height: 14px;
+    overflow: hidden;
+    position: relative;
+    width: 14px;
+    margin: 18px 10px 0 20px;
+    cursor: pointer;
+    border-radius: 2px;
+    color: #afafaf;
+    background: url(../images/rds-new/close.png) center no-repeat;
+}
+.rds-boxclose:hover {
+    background: url(../images/rds-new/close-hover.png) center no-repeat;
+}
+span.icon {
+    display: block;
+    float: left;
+    font-size: 13px;
+    margin: 0 2px;
+    line-height: 33px;
+    height:33px;
+    width:20px;
+}
+.btn-icon{
+    display: block;
+    float: left;
+    margin-right: 5px;
+    font-size: 13px;
+    width:14px;
+    height:18px;
+}
+#new-user{
+    background: url(../images/rds-new/new-user.png) center no-repeat;
+}
+
+#new-new{
+    background: url(../images/rds-new/new.png) center no-repeat;
+}
+#new-detach{
+    background: url(../images/rds-new/unbind.png) center no-repeat;
+}
+#new-delete{
+    background: url(../images/rds-new/delete.png) center no-repeat;
+}
+#new-compare{
+    background: url(../images/rds-new/compare.png) center no-repeat;
+}
+#new-buy{
+    background: url(../images/rds-new/buy.png) center no-repeat;
+}
+#new-cancel{
+    background: url(../images/rds-new/cancel.png) center no-repeat;
+}
+#new-edit{
+    background: url(../images/rds-new/edit.png) center no-repeat;
+}
+#new-save{
+    background: url(../images/rds-new/save.png) center no-repeat;
+}
+#new-bind{
+    background: url(../images/rds-new/bind.png) center no-repeat;
+}
+.add-user:hover,.add-database:hover,.add-config:hover{
+    text-decoration: none;
+    color:white;
+    background-color: #0080CE;
+}
+.icon-p{
+    float:left;
+}
+.rds-btn-instance:hover{
+    text-decoration: none;
+    color:white;
+    background-color: #0080CE;
+}
+#detachConfig, .autoprotect-modify{
+    margin-left:20px;
+}
+.check-selected{
+    background-color:rgb(241, 245, 248);
+}
+
+
+
+
+
+
+
+

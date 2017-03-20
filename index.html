@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zh-cn">
+<head>
+    <title>控制台</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="statics/js/jquery-2.0.3.min.js"></script>
+    <link href="statics/css/bootstrap.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="statics/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="statics/css/main.css" type="text/css" media="screen"/>
+    <!--end-->
+</head>
+<body>
+
+<div class="pane">
+     <div class="rds-tab">
+           <a href="index.html" class="rds-tab-active" id="yibiaoban">仪表盘</a>
+           <a href="rdsInstance.html" id="shili">实例</a>
+     </div>
+
+
+    <div class="row">
+        <div class="rds-content" id="rds-content-0">
+            <div class="index_chart col-md-4 col-xs-4 col-sm-4" id="index_chart1">
+            	<div class="index_chart_border">
+	            	<div class="index_chart_title">
+	            		<p>实例概况</p>
+	            	</div>
+	            	<div class="index_chart_body" id="index_chart1_body"></div>
+            	</div>
+            </div>
+            
+            <div class="index_chart col-md-4 col-xs-4 col-sm-4" id="index_chart2">
+            	<div class="index_chart_border">
+	            	<div class="index_chart_title">
+	            		<p>参数组概况</p>
+	            	</div>
+	            	<div class="index_chart_body" id="index_chart2_body"></div>
+	            </div>
+            </div>
+            
+            <div class="index_chart col-md-4 col-xs-4 col-sm-4" id="index_chart3">
+            	<div class="index_chart_border">
+	            	<div class="index_chart_title">
+	            		<p>备份使用率</p>
+	            	</div>
+	            	<div class="index_chart_body" id="index_chart3_body"></div>
+	            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="panel " id="rds-board" style="padding-bottom:3px;">
+                <div class="panel-heading">
+                    <h3 class="panel-title">资源使用</h3>
+                </div>
+               
+                <table class="table table-hover table-responsive">
+
+                    <tbody>
+                    <tr>
+                        <td id="shuju"><a href="rdsInstance.html">数据库实例</a></td>
+                        <td id="shuju_num" class="">2</td>
+                    </tr>
+                    <tr>
+                        <td id="zidong"><a href="rdsBackup.html">备份</a></td>
+                        <td id="backup_num2" class="">1</td>
+                    </tr>
+                    <tr>
+                        <td id="moren"><a href="rdsConfig.html">默认参数组（参数组)</a></td>
+                        <td id="config_num" class="">1</td>
+                    </tr>
+                    <tr>
+                        <td id="yonghu"><a href="rdsConfig.html">用户自定义（参数组）</a></td>
+                        <td id="config_num2" class="">1</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel" id="rds-board"  style="margin-bottom:70px;">
+                <div class="panel-heading">
+                    <h3 class="panel-title">产品状态</h3>
+                </div>
+                <table class="table">
+                    <td>当前状态</td>
+                    <td style="color:#3399E5;">服务正常 </td>
+                </table>
+            </div>
+        
+          <!--   <div class="panel " id="rds-board">
+                <div class="panel-heading">
+                    <h3 class="panel-title">帮助信息</h3>
+                </div>
+                <table class="table">
+                    <td><a href="#">BC-RDS使用手册</a></td>
+                    <td><a href="#">BC-RDS接口手册</a></td>
+                </table>
+            </div> -->
+        
+       
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript" src="statics/js/rdsIndex.js"></script>
+</body>
+</html>

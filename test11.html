@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>rdsDemo--test11</title>
+    <link rel="stylesheet" href="statics/css/main.css">
+    <link rel="stylesheet" href="statics/css/bootstrap.min.css">
+    <script type="text/css" src="statics/js/main.js"></script>
+    <script type="text/css" src="statics/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="pane">
+    <!--<div class="rds-tab">
+        <a href="index.html" id="yibiaoban">仪表盘</a>
+        <a href="rdsInstance.html"  class="rds-tab-active" id="shili">实例</a>
+    </div>
+
+-->
+    <div class="rds-content" id="rds-content-2">
+        <div class="rds-content-4-head">
+            <div class="form-group">
+                <div class="col-md-6">
+                    <p style="font-size: larger;float: left;color: #3399E5">实例名：test111</p>&nbsp;&nbsp;&nbsp;
+                    <a type="button " href="rdsInstance.html"
+                       target="_blank" style="color: grey;border: 1px solid grey;padding:3px;">
+                        返回实例列表
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a type="button" href="" target="_blank" class="rds-btn-instance">
+                        查询订单
+                    </a>
+                    <a type="button" href="" target="_blank" class="rds-btn-instance">
+                        重启实例
+                    </a>
+                    <a type="button" href="" target="_blank" class="rds-btn-instance">
+                        备份实例
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+ <div class="rds-content-2-body" id="rds-content-2-body">
+    <hr/>
+    <div class="rds-content-2-body-body" >
+        <ul class="nav nav-tabs" role="tablist" id="tab-list">
+            <li class="active"><a href="#jiben" role="tab" data-toggle="tab">基本信息</a></li>
+            <li><a href="#yonghu" role="tab" data-toggle="tab">用户管理</a></li>
+            <li><a href="#shujuku" role="tab" data-toggle="tab">数据库管理</a></li>
+            <li><a href="#jiankong" role="tab" data-toggle="tab">监控</a></li>
+            <li><a href="#beifen" role="tab" data-toggle="tab">备份管理</a></li>
+            <li><a href="#canshuzu" role="tab" data-toggle="tab">参数设置</a></li>
+            <li><a href="#rizhi" role="tab" data-toggle="tab"  style="color: grey">日志管理</a></li>
+            <li><a href="#keyongxing" role="tab" data-toggle="tab"  style="color: grey">服务可用性</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane fade in active" id="jiben">
+                <div class="" style="height:30px;"></div>
+                <div class="">
+                        <div class="col-md-7">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">基本信息</div>
+                                <div class="table-responsive">
+                                    <table class="table" id="instance-table-0">
+                                        <tbody>
+                                        <tr>
+                                            <td style="width:40%;">名称</td>
+                                            <td id="ds_name">rds1647s1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ID</td>
+                                            <td id="ds_id">a7b16626-c147-43d6-ad68-c8517d660dbe</td>
+                                        </tr>
+                                        <tr>
+                                            <td>数据存储</td>
+                                            <td id="ds_storage">mysql 5.6</td>
+                                        </tr>
+                                    <!--    <tr>
+                                            <td>存储版本</td>
+                                            <td id="ds_version">5.6</td>
+                                        </tr>-->
+                                        <tr>
+                                            <td>绑定参数组</td>
+                                            <td id="ds_config">no configuration</td>
+                                        </tr>
+                                        <tr>
+                                            <td>主备详情</td>
+                                            <td id="replica_td">是slave节点，其master节点为 rds1647</td>
+                                        </tr>
+                                        <tr>
+                                            <td>子网名称</td>
+                                            <td id="ds_network">senlinuser</td>
+                                        </tr>
+                                        <tr>
+                                            <td>状态</td>
+                                            <td id="ds_status">BUILD</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="panel panel-default" style="margin-bottom: 45px;">
+                                <div class="panel-heading">只读实例</div>
+                                <div class="panel-body">
+                                    <p class="text-danger">&nbsp;0个</p>
+                                    <a href="" class="" style="padding:5px;">添加只读实例</a>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">备份实例</div>
+                                <div class="panel-body">
+                                    <p class="text-danger">&nbsp;0个</p>
+                                    <a href="" class="" style="padding:5px;">创建备份</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-md-10"><div class="panel panel-default">
+                        <div class="panel-heading">规格</div>
+                        <div class="table-responsive">
+                            <table class="table" id="instance-table-1">
+                                <tbody>
+                                <tr>
+                                    <td style="width:40%">云主机类型</td>
+                                    <td id="ds_cloud_type">rds.tiny</td>
+                                </tr>
+                                <tr>
+                                    <td>内存</td>
+                                    <td id="ds_cloud_memory">300MB</td>
+                                </tr>
+                                <tr>
+                                    <td>云硬盘大小</td>
+                                    <td id="ds_cloud_disk">1 GB</td>
+                                </tr>
+                                <tr>
+                                    <td>已创建</td>
+                                    <td id="ds_cloud_create">2016年10月19日 17:01</td>
+                                </tr>
+                                <tr>
+                                    <td>已更新</td>
+                                    <td id="ds_cloud_update">2016年10月19日 17:01</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div></div>
+                <div class="col-md-10"><div class="panel panel-default">
+                        <div class="panel-heading">连接信息</div>
+                        <div class="table-responsive">
+                            <table class="table" id="instance-table-2">
+                                <tbody>
+                                <tr>
+                                    <td style="width:40%;">主机</td>
+                                    <td id="ds_main">192.168.40.86</td>
+                                </tr>
+                                <tr>
+                                    <td>数据库端口</td>
+                                    <td id="ds_port">3306</td>
+                                </tr>
+                                <tr>
+                                    <td>连接举例</td>
+                                    <td id="ds_instance">mysql -h 192.168.40.86 -u 用户名 -p<br>用户名 -p mysql://用户名:密码@192.168.40.86:3306/数据库</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div></div>
+            </div>
+            <div class="tab-pane fade in" id="yonghu">
+                <div class="row feature">
+                    <div class="" style="height:20px;"></div>
+                    <div class="col-md-10">
+                        <div class="rds-adduser-head ">
+                            <a type="button" class="add-user">
+                                <span class="icon" id="new-user"></span>
+                                <span class="icon-p">添加用户</span>
+                            </a>
+                        </div>
+                        <div class="user-table-class">
+                            <table class="user-table" id="user_sm_table" border="0"
+                                   cellspacing="0">
+                                <tr id="table-first">
+                                    <td>用户名</td>
+                                    <td>状态</td>
+                                    <td>所属数据库</td>
+                                    <td>帐号描述</td>
+                                    <td>动作</td>
+                                </tr>
+                                <tr class="" title="333333">
+                                    <td>user11</td>
+                                    <td>激活</td>
+                                    <td>db11</td>
+                                    <td>test user</td>
+                                    <td>
+                                        <a href="javascript:void(0)" class="deleteUser">重置密码</a>
+                                        <a href="javascript:void(0)" class="deleteUser">更改权限</a>
+                                        <a href="javascript:void(0)" class="deleteUser">删除</a>
+                                    </td>
+                                </tr>
+                                <tr class="" title="333333">
+                                    <td>user22</td>
+                                    <td>激活</td>
+                                    <td>db22</td>
+                                    <td>test user22</td>
+                                    <td>
+                                        <a href="javascript:void(0)" class="deleteUser">重置密码</a>
+                                        <a href="javascript:void(0)" class="deleteUser">更改权限</a>
+                                        <a href="javascript:void(0)" class="deleteUser">删除</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade in" id="shujuku">
+                <div class="" style="height: 20px;"></div>
+                <div class="row feature">
+                    <div class="col-md-10">
+                        <div class="rds-addDatabase-head clearfix">
+                            <a type="button" id="add-database"
+                               class="add-database">
+                                <span class="icon" id="new-new"></span>
+                                <span class="icon-p">创建数据库</span>
+                            </a>
+                        </div>
+                        <div class="user-table-class">
+                            <table class="user-table" id="database_sm_table" border="0"
+                                   cellspacing="0">
+                                <tr id="table-first">
+                                    <td>数据库名</td>
+                                    <td>数据库状态</td>
+                                    <td>字符集</td>
+                                    <td>绑定帐号</td>
+                                    <td>描述</td>
+                                    <td>操作</td>
+                                </tr>
+                                <tr class="">
+                                    <td>db11</td>
+                                    <td>运行中</td>
+                                    <td>utf8</td>
+                                    <td>user11</td>
+                                    <td>user描述信息...</td>
+                                    <td>
+                                        <a href="javascript:void(0)" type="button" class="deleteDB">删除</a>
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                    <td>db22</td>
+                                    <td>运行中</td>
+                                    <td>utf8</td>
+                                    <td>user11</td>
+                                    <td>user描述信息...</td>
+                                    <td>
+                                        <a href="javascript:void(0)" type="button" class="deleteDB">删除</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tab-pane fade in" id="jiankong">
+                <div class="row feature">
+                    <div class="col-md-10">
+                        <h2 class="feature-heading">这里是监控信息..<span class="feature-heading-2"></span></h2>
+                        <h2 class="feature-heading">十幅监控图<span class="feature-heading-2"></span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade in" id="beifen">
+                <div style="height: 20px;"></div>
+                <div class="tab-pane fade in" id="shujubeifen">
+                    <ul id="myTab" class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#home" data-toggle="tab">
+                                数据备份
+                            </a>
+                        </li>
+                        <li><a href="#binlog" data-toggle="tab" style="color: grey">日志备份</a></li>
+                        <li><a href="#ios" data-toggle="tab">备份设置</a></li>
+                    </ul>
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade in active" id="home">
+                            <div class="content-instance-title row">
+                                <p class="col-md-1"  style="width:4%;"><input type="checkbox" id="backupfirstid" class=" instance-box" onclick="javascript:selectalls();" /></p>
+                                <p class="col-md-3 ">名称</p>
+                                <p class="col-md-1  db-engine" style="width:13.66%">状态</p>
+                                <p class="col-md-1">数据库引擎</p>
+                                <p class="col-md-1">创建时间</p>
+                                <p class="col-md-1">完成时间</p>
+                                <p class="col-md-1">增量</p>
+                                <p class="col-md-3" style="width:23%">动作</p>
+                            </div>
+                            <div class="row content-backup" title_my="COMPLETED"style="display: block;">
+                                <p class="col-md-1" style="width:4%;">
+                                <input type="checkbox" id="checkbox0" name="checkboxName" class="backup-box">
+                                </p>
+                                <a href="javascript:void(0)" class="backup-id">
+                                    <p class="col-md-3">autobackup_2d43bc04-e71d-42e4-99c8-ab18b3510929555</p>
+                                </a>
+                                <p class="col-md-1" style="width:13.66%">COMPLETED</p>
+                                <p class="col-md-1">mysql 5.6</p>
+                                <p class="col-md-1">2016-09-23 10:11:12</p>
+                                <p class="col-md-1">2016-09-27 10:11:12</p>
+                                <p class="col-md-1">否</p>
+                                <p class="col-md-3" style="width:23%">
+                                    <span style="display:inline;margin-right:15px;" class="">
+                                        <a href="javascript:void(0)" style="color:#2D92CA">恢复</a></span>
+                                    <span style="display:inline" class="delBackup9190135f-e81e-48d6-9269-8f5888a03c8e">
+                                        <a href="javascript:void(0)" style="color:#2D92CA">删除</a></span>
+                                </p></div>
+                            <div class="row content-backup" title_my="COMPLETED"style="display: block;">
+                                <p class="col-md-1" style="width:4%;">
+                                    <input type="checkbox" id="checkbox0" name="checkboxName" class="backup-box">
+                                </p>
+                                <a href="javascript:void(0)" class="backup-id">
+                                    <p class="col-md-3">normal-backup-test</p>
+                                </a>
+                                <p class="col-md-1" style="width:13.66%">COMPLETED</p>
+                                <p class="col-md-1">mysql 5.6</p>
+                                <p class="col-md-1">2016-09-23 10:11:12</p>
+                                <p class="col-md-1">2016-09-27 10:11:12</p>
+                                <p class="col-md-1">否</p>
+                                <p class="col-md-3" style="width:23%">
+                                    <span style="display:inline;margin-right:15px;" class="">
+                                        <a href="javascript:void(0)" style="color:#2D92CA">恢复</a></span>
+                                    <span style="display:inline" class="delBackup9190135f-e81e-48d6-9269-8f5888a03c8e">
+                                        <a href="javascript:void(0)" style="color:#2D92CA">删除</a></span>
+                                </p></div>
+
+                        </div>
+                        <div class="tab-pane fade" id="ios">
+                            <div style="height: 20px;"></div>
+                            <div class="pull-left col-padding col-sm-10">
+
+                                <div class="form-group clearfix">
+                                    <label class="col-sm-2 control-label" text-plain="" type="backup" text="retentionDays">保留天数</label>
+                                    <div class="col-sm-8"><div class="form-control-static ng-binding">7</div></div>
+                                </div>
+                                <div class="form-group clearfix"><label class="col-sm-2 control-label" text-plain="" type="backup" text="backupPeriod">备份周期</label><div class="col-sm-8"><div class="form-control-static ng-binding">星期一,星期三,星期五,星期日</div></div></div><div class="form-group clearfix"><label class="col-sm-2 control-label" text-plain="" type="backup" text="backupTime">备份时间</label><div class="col-sm-8"><div class="form-control-static ng-binding">06:00-07:00</div></div></div><div class="form-group clearfix"><label class="col-sm-2 control-label" text-plain="" type="backup" text="nextTime">预计下次备份时间</label><div class="col-sm-8"><div class="form-control-static ng-binding">2016-10-21 06:12:00</div></div></div>
+
+<!--
+                                <div class="pull-left col-padding col-sm-10"><div class="form-group"><label class="col-sm-2 control-label"></label><div class="col-sm-8">
+-->
+                                <button type="button" class="btn btn-primary"
+                                        style="float: left;margin-left: 13px;" data-toggle="modal" data-target="#myModal">编辑</button>
+<!--
+                            </div></div></div>
+-->
+
+                                <!-- 模态框（Modal） -->
+                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header"  style="background-color: #3071a9">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                                    &times;
+                                                </button>
+                                                <h4 class="modal-title" id="myModalLabel" style="color: white">
+                                                    备份设置
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form class="form-horizontal" role="form">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-3 control-label">accesskey:</label>
+                                                        <div class="col-sm-7">
+                                                            <input type="text" class="form-control" placeholder="输入云存储服务的accesskey...">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-3 control-label">securekey:</label>
+                                                        <div class="col-sm-7">
+                                                            <input type="text" class="form-control" placeholder="输入云存储服务的securekey...">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-3 control-label">保留天数:</label>
+                                                        <div class="col-sm-7">
+                                                            <input type="text" class="form-control" value="30">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group"><label class="col-sm-3 control-label" text-plain="" type="dialog.backupSetting" text="period">备份周期:</label><div class="col-sm-7"><!-- ngRepeat: day in dialogForm.week --><div class="checkbox checkbox-inline ng-scope" data-ng-repeat="day in dialogForm.week"><label><input type="checkbox" ng-model="day.value" checked="checked"  ng-disabled="dialogForm.disableWeek" class="ng-pristine ng-valid"><span text-plain="" type="common" text="Monday">星期一</span></label></div><!-- end ngRepeat: day in dialogForm.week --><div class="checkbox checkbox-inline ng-scope" data-ng-repeat="day in dialogForm.week"><label><input type="checkbox" ng-model="day.value" ng-disabled="dialogForm.disableWeek" class="ng-pristine ng-valid"><span text-plain="" type="common" text="Tuesday">星期二</span></label></div><!-- end ngRepeat: day in dialogForm.week --><div class="checkbox checkbox-inline ng-scope" data-ng-repeat="day in dialogForm.week"><label><input type="checkbox" ng-model="day.value" ng-disabled="dialogForm.disableWeek" class="ng-pristine ng-valid" checked="checked" ><span text-plain="" type="common" text="Wednesday">星期三</span></label></div><!-- end ngRepeat: day in dialogForm.week --><div class="checkbox checkbox-inline ng-scope" data-ng-repeat="day in dialogForm.week"><label><input type="checkbox" ng-model="day.value" ng-disabled="dialogForm.disableWeek" class="ng-pristine ng-valid"><span text-plain="" type="common" text="Thursday">星期四</span></label></div><!-- end ngRepeat: day in dialogForm.week --><div class="checkbox checkbox-inline ng-scope" data-ng-repeat="day in dialogForm.week"><label><input type="checkbox" ng-model="day.value" ng-disabled="dialogForm.disableWeek" class="ng-pristine ng-valid"><span text-plain="" type="common" text="Friday">星期五</span></label></div><!-- end ngRepeat: day in dialogForm.week --><div class="checkbox checkbox-inline ng-scope" data-ng-repeat="day in dialogForm.week"><label><input type="checkbox" ng-model="day.value" ng-disabled="dialogForm.disableWeek" class="ng-pristine ng-valid" checked="checked" ><span text-plain="" type="common" text="Saturday">星期六</span></label></div><!-- end ngRepeat: day in dialogForm.week --><div class="checkbox checkbox-inline ng-scope" data-ng-repeat="day in dialogForm.week"><label><input type="checkbox" ng-model="day.value" ng-disabled="dialogForm.disableWeek" class="ng-pristine ng-valid"><span text-plain="" type="common" text="Sunday">星期日</span></label></div><!-- end ngRepeat: day in dialogForm.week --><div class="help-block text-danger ng-hide" ng-show="dialogForm.fieldInvalid.week" text-plain="" type="dialog.backupSetting" text="needBackup"></div></div></div>
+                                                    <div class="form-group"><label class="col-sm-3 control-label" text-plain="" type="dialog.backupSetting" text="time">备份时间:</label><div class="col-sm-7"><select class="form-control ng-pristine ng-valid" data-ng-model="dialogForm.selectedTime" ng-options="hour.label for hour in dialogForm.time"><option value="0">08:00-09:00</option><option value="1">09:00-10:00</option><option value="2">10:00-11:00</option><option value="3">11:00-12:00</option><option value="4">12:00-13:00</option><option value="5">13:00-14:00</option><option value="6">14:00-15:00</option><option value="7">15:00-16:00</option><option value="8">16:00-17:00</option><option value="9">17:00-18:00</option><option value="10">18:00-19:00</option><option value="11">19:00-20:00</option><option value="12">20:00-21:00</option><option value="13">21:00-22:00</option><option value="14">22:00-23:00</option><option value="15">23:00-00:00</option><option value="16">00:00-01:00</option><option value="17">01:00-02:00</option><option value="18">02:00-03:00</option><option value="19">03:00-04:00</option><option value="20">04:00-05:00</option><option value="21">05:00-06:00</option><option value="22" selected="selected">06:00-07:00</option></select></div></div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    取消
+                                                </button>
+                                                <button type="button" class="btn btn-primary">
+                                                    确定
+                                                </button>
+                                            </div>
+                                        </div><!-- /.modal-content -->
+                                    </div><!-- /.modal -->
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="binlog">
+                            <div style="height: 20px;"></div>
+                            binlog日志备份，尽请期待..
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab-pane fade in" id="canshuzu">
+                <div class="row feature">
+                    <div class="col-md-10">
+                        <div class="rds-content-5-head">
+                            <a type="button" id="edit-config" name="编辑参数" class="rds-btn-instance configBtn-position" >
+                                <span class="btn-icon" id="new-edit"></span>
+                                编辑参数
+                            </a>
+                        </div>
+
+                        <div class="rds-content-5-body">
+                            <div class="content-instance-title">
+                                <div class="row" style="margin-left:0;margin-right:0;">
+                                    <p class="col-md-2">参数名称</p>
+                                    <p class="col-md-2" style="width:14.66666667%">参数值</p>
+                                    <p class="col-md-2" style="width:18.66666667%">可修改参数值</p>
+                                    <p class="col-md-1">数据类型</p>
+                                    <p class="col-md-1">重启生效</p>
+                                    <p class="col-md-4">描述</p>
+                                </div>
+                            </div>
+
+                            <div class="row config-row" style="margin: 0px; display: block;"><p class="col-md-2">connect_timeout</p><p class="col-md-2 config-value" style="width:14.66666667%">null</p><p class="col-md-2" style="width:18.66666667%;padding-top:8px;">[ 2~31536000 ]</p><p class="col-md-1">integer</p><p class="col-md-1">FALSE</p><p class="col-md-4">连接超时时间</p></div>
+                            <div class="row config-row" style="margin: 0px; display: block;"><p class="col-md-2">local_infile</p><p class="col-md-2 config-value" style="width:14.66666667%">null</p><p class="col-md-2" style="width:18.66666667%;padding-top:8px;">[ 0,1 ]</p><p class="col-md-1">integer</p><p class="col-md-1">FALSE</p><p class="col-md-4">设置LOAD DATA INFILE是否支持LOCAL</p></div>
+                            <div class="row config-row" style="margin: 0px; display: block;"><p class="col-md-2">max_allowed_packet</p><p class="col-md-2 config-value" style="width:14.66666667%">null</p><p class="col-md-2" style="width:18.66666667%;padding-top:8px;">[ 1024~1073741824 ]</p><p class="col-md-1">integer</p><p class="col-md-1">FALSE</p><p class="col-md-4">可接受的最大数据包大小</p></div>
+                            <div class="row config-row" style="margin: 0px; display: block;"><p class="col-md-2">max_connect_errors</p><p class="col-md-2 config-value" style="width:14.66666667%">null</p><p class="col-md-2" style="width:18.66666667%;padding-top:8px;">[ 1~18446744073709500000 ]</p><p class="col-md-1">integer</p><p class="col-md-1">FALSE</p><p class="col-md-4">如果一个host错误链接数超过该值，那么服务端会阻塞该host后面的连接请求</p></div>
+                            <div class="row config-row" style="margin: 0px; display: block;"><p class="col-md-2">max_connections</p><p class="col-md-2 config-value" style="width:14.66666667%">null</p><p class="col-md-2" style="width:18.66666667%;padding-top:8px;">[ 1~100000 ]</p><p class="col-md-1">integer</p><p class="col-md-1">FALSE</p><p class="col-md-4">设置最大连接数</p></div>
+                            <div class="row config-row" style="margin: 0px; display: block;"><p class="col-md-2">max_user_connections</p><p class="col-md-2 config-value" style="width:14.66666667%">null</p><p class="col-md-2" style="width:18.66666667%;padding-top:8px;">[ 0~4294967295 ]</p><p class="col-md-1">integer</p><p class="col-md-1">FALSE</p><p class="col-md-4">所有用户的最大连接数</p></div>
+                            <div class="row config-row" style="margin: 0px; display: block;"><p class="col-md-2">sort_buffer_size</p><p class="col-md-2 config-value" style="width:14.66666667%">null</p><p class="col-md-2" style="width:18.66666667%;padding-top:8px;">[ 32768~18446744073709500000 ]</p><p class="col-md-1">integer</p><p class="col-md-1">FALSE</p><p class="col-md-4">用于排序的缓冲池大小</p></div>
+                            <div class="row config-row" style="margin: 0px; display: block;"><p class="col-md-2">wait_timeout</p><p class="col-md-2 config-value" style="width:14.66666667%">null</p><p class="col-md-2" style="width:18.66666667%;padding-top:8px;">[ 1~31536000 ]</p><p class="col-md-1">integer</p><p class="col-md-1">FALSE</p><p class="col-md-4">等待超时时间</p></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade in" id="rizhi">
+                <div class="row feature">
+                    <div class="col-md-7">
+                        <h2 class="feature-heading">日志管理功能..尽请期待<span class="feature-heading-2"></span></h2>
+                        <p class="lead">日志管理功能..尽请期待</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade in" id="keyongxing">
+                <div class="row feature">
+                    <div class="col-md-7">
+                        <h2 class="feature-heading">服务可用性..涉及内容..主备切换等<span class="feature-heading-2"></span></h2>
+                        <p class="lead">服务可用性..尽请期待</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+</div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        console.log(123123);
+        $('#tab-list2 a').click(function (e) {
+            $(this).tab('show')
+        })
+        });
+
+
+</script>
+
+</body>
+</html>

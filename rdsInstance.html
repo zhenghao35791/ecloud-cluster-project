@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>rdsDemo</title>
+    <link rel="stylesheet" href="statics/css/main.css">
+    <link rel="stylesheet" href="statics/css/bootstrap.min.css">
+    <script type="text/css" src="statics/js/main.js"></script>
+    <script type="text/css" src="statics/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="pane">
+    <div class="rds-tab">
+        <a href="index.html" id="yibiaoban">仪表盘</a>
+        <a href="rdsInstance.html"  class="rds-tab-active" id="shili">实例</a>
+    </div>
+
+    <div class="rds-content" id="rds-content-2">
+        <div class="rds-content-4-head">
+            <form class="form-inline" style="display:inline-block;">
+                <div class="form-group">
+                    <a type="button" href="https://ecloud.10086.cn/product/buy/rdb" target="_blank" class="rds-btn-instance">
+                        <span class="btn-icon" id="new-buy"></span>
+                        订购
+                    </a>
+                    <select id="rds-content-guolv" style="width:150px;padding-left:5px;margin-right:5px;">
+                        <option>所有的实例</option>
+                        <option>活动的实例</option>
+                        <option>非活动的实例</option>
+                    </select>
+                    <input type="submit" class="rds-btn-instance refresh-btn" id="refresh_btn" value=" "/>
+                </div>
+            </form>
+        </div>
+        <div class="rds-content-2-body" id="rds-content-2-body">
+            <div class="content-instance-title row">
+                <p class="col-md-2 " style="width:12.6666%">云主机名</p>
+                <p class="col-md-1 db-engine" style="width:12.3333%">状态</p>
+                <p class="col-md-1 ">数据库版本</p>
+                <p class="col-md-1" style="width:18%">主机</p>
+                <p class="col-md-1" style="width:12.3333%">配置</p>
+                <p class="col-md-1">云硬盘大小</p>
+                <p class="col-md-1">主备状态</p>
+                <!--   <p class="col-md-1">数据库引擎</p>  -->
+            </div><!--div class="content-instance-title"结束 -->
+            <div class="rds-content-2-body-body" >
+                <div mytitle="master" class="row config-row" name="test111" id="test111" title="ACTIVE" style="display: block;">
+                    <a href="test11.html" class="instance-id">
+                        <p class="col-md-2" style="width:12.6666%">test111</p></a>
+                    <p class="col-md-1" style="width:12.3333%">ACTIVE</p>
+                    <p class="col-md-1">mysql5.5</p>
+                    <p style="width:18%" class="col-md-1">192.168.172.3</p>
+                    <p style="width:12.3333%" class="col-md-1 instance_name386471d2-8ad8-407c-a2e6-f6c85110dabc">rds.tiny</p>
+                    <p class="col-md-1">20GB</p>
+                    <p class="col-md-1">master</p>
+                </div>
+                <div mytitle="master" class="row config-row" name="test222" id="test222" title="ACTIVE" style="display: block;">
+                    <a href="test11.html" class="instance-id">
+                        <p class="col-md-2" style="width:12.6666%">test111</p></a>
+                    <p class="col-md-1" style="width:12.3333%">ACTIVE</p>
+                    <p class="col-md-1">mysql5.5</p>
+                    <p style="width:18%" class="col-md-1">192.168.172.3</p>
+                    <p style="width:12.3333%" class="col-md-1 instance_name386471d2-8ad8-407c-a2e6-f6c85110dabc">rds.tiny</p>
+                    <p class="col-md-1">20GB</p>
+                    <p class="col-md-1">master</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
