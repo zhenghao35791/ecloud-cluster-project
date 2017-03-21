@@ -1,0 +1,528 @@
+
+.link {
+    color: #2d92ca;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+
+.note {
+    margin: 10px 0 0 0;
+}
+
+
+
+.white {
+    background: #95a5a6;
+    color: #fff;
+}
+
+
+
+.TBWrap {
+    height: 100%;
+    position: relative;
+}
+
+.panes {
+    margin: 0px;
+    padding: 20px 10px;
+    background-color: #fff;
+}
+
+.tabtitle {
+    overflow: hidden;
+    background-color: #cfeaf8;
+}
+
+.tabtitle li {
+    float: left;
+}
+
+.tabtitle li a {
+    float: left;
+    display: block;
+    margin: 10px 0 0 10px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px 3px 0 0;
+    background-color: #cfeaf8;
+    padding: 7px 24px;
+}
+
+.tab_current {
+    background-color: #fff !important;
+    color: #555 !important;
+}
+
+.pane-detail .table {
+    margin: 0 0 0 20px;
+    width: 97%;
+}
+
+.pane-detail .table tbody td:first-child {
+    width: 100px;
+    text-align: right;
+}
+
+.pane-detail .table tbody td {
+    border-bottom: 0;
+}
+
+.pane-detail .table tbody tr:hover {
+    background-color: #fff;
+}
+
+.pane-content {
+    float: left;
+}
+
+.pane-content span {
+    font-size: 14px;
+}
+
+.pane-item {
+    background-color: #f8f8f8;
+    margin: 10px;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+.pane-item p {
+    display: block;
+    margin: 10px 20px;
+}
+
+.pane-volume .volume-icon {
+    background-image: url("../images/icon-volume.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.pane-network .network-icon {
+    background-image: url("../images/icon-network.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.pane-backup .backup-icon {
+    background-image: url("../images/icon-backup.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.btnshow {
+    margin: 10px 20px;
+}
+
+form {
+    position: relative;
+}
+
+.table td .select_div .select_input,
+.table .select_div .select_ul {
+    width: 60px;
+}
+
+.table td .select_div .select_ul {
+    height: auto !important;
+    min-height: 30px;
+}
+
+.table td .select_div .select_input {
+    text-indent: 5px;
+    margin-top: -5px;
+}
+
+.table td .select_div .select_txt,
+.table .select_div span.select_ul a {
+    padding-left: 8px;
+    line-height: 30px;
+}
+
+.table td .state {
+    line-height: 30px;
+}
+
+.table td i {
+    width: 23px;
+    height: 30px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+}
+
+.table td i.recover {
+    background: url(../images/icon_recover.png) no-repeat scroll center center rgba(0, 0, 0, 0);
+    *background-image: url("../images/icon_recover.png");
+    background-image: url("../images/icon_recover.png") \0;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    -ms-background-position-x: center;
+    -ms-background-position-y: 0px;
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-color: transparent;
+}
+
+.table td i.stop {
+    background: url(../images/icon_stop.png) no-repeat scroll center center rgba(0, 0, 0, 0);
+    *background-image: url("../images/icon_stop.png");
+    background-image: url("../images/icon_stop.png") \0;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    -ms-background-position-x: center;
+    -ms-background-position-y: 0px;
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-color: transparent;
+}
+
+.table td i.end {
+    background: url(../images/icon_end.png) no-repeat scroll center center rgba(0, 0, 0, 0);
+    *background-image: url("../images/icon_end.png");
+    background-image: url("../images/icon_end.png") \0;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    -ms-background-position-x: center;
+    -ms-background-position-y: 0px;
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-color: transparent;
+}
+
+.table thead th.status {
+    width: 100px;
+}
+
+td.selected {
+    background: #f4f5f6;
+}
+
+.movebox {
+    background-color: #fff;
+    bottom: 0;
+    height: 100%;
+    left: 2000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(100%, 0px);
+    z-index: 2;
+    border-left: 1px solid #ccc;
+}
+
+.movebox.visible {
+    transform: translate(0px, 0px);
+    transition: transform 500ms ease 0s;
+}
+
+.movebox.invisible {
+    transform: translate(100%, 0px);
+    transition: transform 500ms ease 0s;
+    display:none;
+}
+
+.boxclose {
+    display: block;
+    cursor: pointer;
+    margin: 5px 20px;
+    font-size: 24px;
+    float: left;
+    color: #fff;
+}
+
+.movebox .details_div {}
+
+.movebox .basicInfo ul {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.movebox .basicInfo .detail_table li {
+    line-height: 30px;
+    width: 100%;
+    color: #808080;
+}
+
+.movebox .basicInfo .detail_table .th {
+    padding-right: 5px;
+}
+
+.movebox .basicInfo .detail_table span {
+    margin-right: 25px;
+}
+
+.movebox .vmInfo {
+    overflow: hidden;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+.vmParams .icoAndStatus {
+    float: left;
+    text-align: center;
+    width: 110px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.vmParams .status {
+    line-height: 24px;
+    padding-bottom: 10px;
+}
+
+.vmParams .status>ins.stop {
+    background: url("../images/icon_stop.png") no-repeat scroll center 0 rgba(0, 0, 0, 0);
+}
+
+.vmParams .status>ins {
+    display: inline-block;
+    height: 20px;
+    vertical-align: middle;
+    width: 20px;
+}
+
+.vmParams .status>span {
+    color: #808080;
+    font-weight: bold;
+}
+
+.vmParams .basicInfo .extParams {
+    border-left: 1px solid #ccc;
+    margin-left: 55px;
+    padding-bottom: 30px;
+    padding-left: 75px;
+}
+
+.relateBtns {
+    line-height: 22px;
+    margin: 8px 0 4px;
+}
+
+a.redbtn,
+a.graybtn {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 12px;
+    height: 25px;
+    line-height: 22px;
+}
+
+.relateInforTb {
+    border: 1px solid #ccc;
+    font-size: 12px;
+}
+
+.relateInforTb th,
+.relateInforTb td {
+    line-height: 18px;
+    padding: 6px 3px;
+}
+
+.relateInforTb th {
+    background: none repeat scroll 0 0 #e5e6e6;
+    border-bottom: 1px solid #ccc;
+    color: #1673b7;
+    text-align: center;
+}
+
+.relateInforTb tbody tr:first-child td {
+    border: medium none;
+}
+
+.relateInforTb td {
+    background: none repeat scroll 0 0 #fff;
+    text-align: center;
+}
+
+.volumeAndNetwork {
+    font-size: 0;
+    padding-left: 55px;
+}
+
+.volumeAndNetwork .volume {
+    border-top: 1px solid #ccc;
+    position: relative;
+}
+
+.volumeAndNetwork .volume .btn {
+    padding: 2px 13px;
+    font-size: 12px;
+    height: 20px;
+    line-height: 18px;
+}
+
+.volumeAndNetwork .volume img {
+    width: 30px;
+    height: 30px;
+}
+
+.volumeAndNetwork .volume,
+.volumeAndNetwork .network {
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: top;
+    width: 33%;
+}
+
+.volumeAndNetwork div.sectionHeader {
+    border-bottom: medium none;
+    border-left: 1px solid #ccc;
+    color: #808080;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 40px;
+    overflow: visible;
+    padding: 5px 0 0 20px;
+}
+
+.volumeAndNetwork .sectionBody {
+    margin-right: 10px;
+}
+
+.vmItem .proIco {
+    float: left;
+    position: relative;
+    text-align: center;
+    width: 48px;
+}
+
+.volumeAndNetwork .box {
+    background-color: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    cursor: default;
+    font-size: 0;
+}
+
+.volumeAndNetwork .vmItem .name,
+.volumeAndNetwork .vmItem .data,
+.volumeAndNetwork .vmItem .opts {
+    font-size: 12px;
+    line-height: 18px;
+    margin-left: 48px;
+}
+
+.vmItem .name,
+.vmItem .data,
+.vmItem .opts,
+.vmItem .vmId {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.volumeAndNetwork .vmItem .opts {
+    height: 24px;
+    visibility: hidden;
+}
+
+.bc_ui_ele {
+    display: inline-block;
+    margin-right: 5px;
+    padding-top: 0 !important;
+}
+
+.bc_btn {
+    height: 26px;
+    outline: medium none;
+}
+
+.bc {
+    border: 0 none;
+    overflow: hidden;
+}
+
+.bc_btn {
+    min-width: 80px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.volumeAndNetwork .vmItem,
+.volumeAndNetwork .vmItem.last,
+.volumeAndNetwork .addVMItem {
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.volumeAndNetwork .addVMItem .box {
+    border: medium none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 18px;
+    width: 55px;
+}
+
+.volumeAndNetwork .vmItem .nicname {
+    max-width: 227px;
+    white-space: nowrap;
+}
+
+.volumeAndNetwork .addVMItem .addbox {
+    height: 25px;
+    width: 50px;
+    border: medium none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #379bdb;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 20px;
+    margin-left: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.orderonline_detail .table tr:hover {
+    background: #fff;
+}
+
+.orderonline_detail .table td {
+    border-bottom: none;
+}
+
+.orderonline_detail .table td:first-child {
+    text-align: right;
+    width: 100px;
+}
+
+.table td span.red {
+    color: red;
+}
+
+label.error {
+    background: url("../images/unchecked.gif") no-repeat left center;
+    padding-left: 16px;
+    padding-bottom: 0;
+    color: #EA5200;
+    margin-left: 10px;
+    text-align: left !important;
+}

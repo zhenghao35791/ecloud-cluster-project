@@ -926,7 +926,15 @@ span.icon {
 .check-selected{
     background-color:rgb(241, 245, 248);
 }
-
+#index_chart1_body{
+    background:transparent url(../images/1.png) no-repeat scroll center center;
+}
+#index_chart2_body{
+    background:transparent url(../images/2.png) no-repeat scroll center center;
+}
+#index_chart3_body{
+    background:transparent url(../images/3.png) no-repeat scroll center center;
+}
 
 
 

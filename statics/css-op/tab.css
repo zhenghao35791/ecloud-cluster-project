@@ -1,0 +1,222 @@
+.tab-contain {
+	width: 100%;
+	*zoom: 1;
+}
+
+.tab-contain>.span12 {
+	width: 99.99999999%;
+    clear:both;
+    text-align: center;
+    background: #fff;
+}
+
+.nav-tabs {
+	text-decoration: none;
+	margin-left: 0;
+	list-style: none;
+    border-bottom: 1px solid #C7C7C7;
+}
+
+.nav-tabs>li {
+  color: #889DB1;
+  cursor: pointer;
+  float: left;;
+  width: 120px;
+  font-size: 14px;
+  text-align:center;
+  line-height:36px;
+
+}
+.nav-tabs>li:nth-child(1){
+	margin-left:-42px;
+}
+
+.nav-tabs>li>a {
+	display:block;
+  width: 120px;
+  font-size: 14px;
+  text-align:center;
+  line-height:36px;
+  color:#889DB1;
+}
+
+
+.nav-tabs>.active>a,.nav-tabs>.active>a:hover {
+  border-bottom:2px solid #244b68;
+  color: #244b68;
+}
+
+.nav-tabs:before,.nav-tabs:after {
+	display: table;
+	content: "";
+}
+
+.nav-tabs:after {
+	clear: both;
+}
+
+.active {
+	display: block;
+}
+
+
+.deactive {
+	display: none;
+}
+
+.tab-content {
+	overflow: hidden;
+}
+
+.tab-content>.tab-pane {
+	display: none;
+}
+
+.tab-content>.active {
+	display: block;
+}
+.nav-tabs-policy {
+	text-decoration: none;
+	margin-left: 0;
+	margin-bottom: 18px;
+	list-style: none;
+	border-bottom: 1px solid #dddddd;
+}
+
+.nav-tabs-policy>li {
+	float: left;
+	margin-bottom: -1px;
+}
+
+.nav-tabs-policy>li>a {
+	color: #555555;
+	display: block;
+	text-decoration: none;
+	padding-right: 12px;
+	padding-left: 12px;
+	margin-right: 2px;
+	line-height: 14px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	border: 1px solid transparent;
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+}
+
+.nav-tabs-policy>li>a:hover {
+	text-decoration: none;
+	background-color: #eeeeee;
+	border-color: #eeeeee #eeeeee #dddddd;
+}
+
+.nav-tabs-policy>.active>a,.nav-tabs-policy>.active>a:hover {
+	color: #555555;
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
+	border-bottom-color: transparent;
+	cursor: default;
+}
+
+.nav-tabs-policy:before,.nav-tabs-policy:after {
+	display: table;
+	content: "";
+}
+
+.nav-tabs-policy:after {
+	clear: both;
+}
+.rulelist li em {
+font-size: 0.5em;
+line-height: 1em;
+color: #999999;
+font-style: normal;
+margin-left: 0.8em;
+}
+#selected_rule {
+margin-bottom: 1.5em;
+counter-reset: v1 0;
+background: #edf9ff;
+border: 1px solid #c0d9e4;
+}
+
+.rulelist {
+padding: 6px;
+background: #eeeeee;
+border: 1px solid #cccccc;
+min-height: 2em;
+width: auto !important;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.rulelist li {
+width: 226px;
+list-style-type: none;
+margin: 6px auto;
+padding: 3px;
+background: #ffffff;
+border: 1px solid #aaaaaa;
+line-height: 18px;
+border-radius: 3px;
+cursor: move;
+padding-left: 23px;
+background: white 11px 50%;
+}
+.rulelist li a.btn {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+font-size: 11px;
+line-height: 12px;
+padding: 2px 5px 3px;
+margin-right: 1px;
+width: 18px;
+text-align: center;
+right: 5px;
+vertical-align: middle;
+float: right;
+}
+.rulelist li em {
+font-size: 0.5em;
+line-height: 1em;
+color: #999999;
+font-style: normal;
+margin-left: 0.8em;
+}
+.rulelist li a.btn {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+font-size: 11px;
+line-height: 12px;
+padding: 2px 5px 3px;
+margin-right: 1px;
+width: 18px;
+text-align: center;
+right: 5px;
+vertical-align: middle;
+float: right;
+}
+.btn-primary {
+background-color: #006ccc;
+background-image: -moz-linear-gradient(top,#0088cc,#006ccc );
+background-image: -ms-linear-gradient(top,#0088cc,#006ccc );
+background-image: -webkit-gradient(linear,0 0,0 100%,from(#0088cc),to(#006ccc ));
+background-image: -webkit-linear-gradient(top,#0088cc,#006ccc );
+background-image: -o-linear-gradient(top,#0088cc,#006ccc );
+background-image: linear-gradient(top,#0088cc,#006ccc );
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088cc', endColorstr='#0044cc ', GradientType=0);
+border-color: rgba(0,0,0,.1)rgba(0,0,0,.1)fadein(rgba(0,0,0,.1),15%);
+filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+border-bottom:2px solid #006ccc;
+}
+.rulelist li em {
+font-size: 0.5em;
+line-height: 1em;
+color: #999999;
+font-style: normal;
+margin-left: 0.8em;
+}
