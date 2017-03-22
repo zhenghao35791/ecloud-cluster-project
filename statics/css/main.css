@@ -720,7 +720,7 @@ input[type=text]:hover, input[type=password]:hover, input[type=search]:hover {
 .index_chart{
     display:inline-block;
     border-radius: 2px;
-    margin:30px 0px 40px 0px;
+    margin:30px 0px 40px 25px;
     font-size: 14px;
 }
 .index_chart p{
@@ -734,7 +734,7 @@ input[type=text]:hover, input[type=password]:hover, input[type=search]:hover {
     background-color: rgba(229, 240, 250, 1);
 }
 .index_chart_body{
-    height:320px;
+    height:250px;
     padding-bottom:20px;
 }
 .index_chart_border{
