@@ -386,14 +386,14 @@
                     <div class="rds-content" id="rds-content-2">
                         <div class="rds-content-4-head">
                             <div class="form-group">
-                                <div class="col-md-6">
-                                    <p style="font-size: larger;float: left;color: #3399E5">实例名：test111</p>&nbsp;&nbsp;&nbsp;
-                                    <a type="button " href="rdsInstance.html"
+                                <div class="col-md-7">
+                                    <p style="font-size: larger;float: left;color: #3399E5">实例名：instance_cluster</p>&nbsp;&nbsp;&nbsp;
+                                    <a type="button " href="rdsCluster.html"
                                        style="color: grey;border: 1px solid grey;padding:3px;">
-                                        返回实例列表
+                                        返回集群列表
                                     </a>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-3">
                                     <a type="button" href="" target="_blank" class="rds-btn-instance">
                                         查询订单
                                     </a>
@@ -418,8 +418,7 @@
                                     <li><a href="#jiankong" role="tab" data-toggle="tab">监控</a></li>
                                     <li><a href="#beifen" role="tab" data-toggle="tab">备份管理</a></li>
                                     <li><a href="#canshuzu" role="tab" data-toggle="tab">参数设置</a></li>
-                                    <li><a href="#rizhi" role="tab" data-toggle="tab"  style="color: grey">日志管理</a></li>
-                                    <li><a href="#keyongxing" role="tab" data-toggle="tab"  style="color: grey">服务可用性</a></li>
+                                    <li><a href="#rizhi" role="tab" data-toggle="tab"  style="color: grey">数据迁移</a></li>
                                 </ul>
 
                                 <div class="tab-content">
@@ -433,28 +432,28 @@
                                                         <table class="table" id="instance-table-0">
                                                             <tbody>
                                                             <tr>
-                                                                <td style="width:40%;">名称</td>
-                                                                <td id="ds_name">rds1647s1</td>
+                                                                <td style="width:40%;">集群名称</td>
+                                                                <td id="ds_name">instance_cluster</td>
                                                             </tr>
                                                             <tr>
-                                                                <td>ID</td>
+                                                                <td>集群ID</td>
                                                                 <td id="ds_id">a7b16626-c147-43d6-ad68-c8517d660dbe</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>集群实例数量</td>
+                                                                <td id="ds_id">3个</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>集群实例列表</td>
+                                                                <td id="ds_id">instance_cluster-member-1，instance_cluster-member-2，instance_cluster-member-3</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>数据存储</td>
                                                                 <td id="ds_storage">mysql 5.6</td>
                                                             </tr>
-                                                            <!--    <tr>
-                                                                    <td>存储版本</td>
-                                                                    <td id="ds_version">5.6</td>
-                                                                </tr>-->
                                                             <tr>
                                                                 <td>绑定参数组</td>
-                                                                <td id="ds_config">no configuration</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>主备详情</td>
-                                                                <td id="replica_td">是slave节点，其master节点为 rds1647</td>
+                                                                <td id="ds_config">configuration001</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>子网名称</td>
@@ -471,17 +470,10 @@
 
                                             </div>
                                             <div class="col-md-3">
-                                                <div class="panel panel-default" style="margin-bottom: 45px;">
-                                                    <div class="panel-heading">只读实例</div>
-                                                    <div class="panel-body">
-                                                        <p class="text-danger">&nbsp;0个</p>
-                                                        <a href="" class="" style="padding:5px;">添加只读实例</a>
-                                                    </div>
-                                                </div>
                                                 <div class="panel panel-default">
                                                     <div class="panel-heading">备份实例</div>
                                                     <div class="panel-body">
-                                                        <p class="text-danger">&nbsp;0个</p>
+                                                        <p class="text-danger">&nbsp;1个</p>
                                                         <a href="" class="" style="padding:5px;">创建备份</a>
                                                     </div>
                                                 </div>
@@ -774,9 +766,13 @@
 
                                                     </div>
                                                 </div>
-                                                <div class="tab-pane fade" id="binlog">
-                                                    <div style="height: 20px;"></div>
-                                                    binlog日志备份，尽请期待..
+                                                <div class="tab-pane fade in" id="rizhi">
+                                                    <div class="row feature">
+                                                        <div class="col-md-7">
+                                                            <h2 class="feature-heading">数据迁移功能..尽请期待<span class="feature-heading-2"></span></h2>
+                                                            <p class="lead">数据迁移功能..尽请期待</p>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

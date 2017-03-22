@@ -12,19 +12,19 @@
 
     <!-- 外框部分 -->
     <link rel="stylesheet" href="statics/css-op/control-common.css"
-          type="text/css" media="screen" />
+          type="text/css" media="screen"/>
     <link rel="stylesheet" href="statics/css-op/control-main.css"
-          type="text/css" media="screen" />
+          type="text/css" media="screen"/>
     <link rel="stylesheet" href="statics/css-op/dialog.css" type="text/css"
-          media="screen" />
+          media="screen"/>
     <link rel="stylesheet" href="statics/css-op/jquery.alertMsg.css"
-          type="text/css" media="screen" />
+          type="text/css" media="screen"/>
     <link rel="stylesheet" href="statics/js-op/page/simplePagination.css"
-          type="text/css" media="screen" />
+          type="text/css" media="screen"/>
     <link rel="stylesheet" href="statics/css-op/operation-log.css"
-          type="text/css" media="screen" />
+          type="text/css" media="screen"/>
     <link rel="stylesheet" href="statics/css-op/perfect-scrollbar.css"
-          type="text/css" media="screen" />
+          type="text/css" media="screen"/>
     <script type="text/javascript" src="statics/js-op/perfect-scrollbar.js"></script>
     <script type="text/javascript" src="statics/js-op/jquery/jquery-2.0.3.min.js"></script>
 </head>
@@ -99,7 +99,8 @@
         <div class="sidebar ps-container">
             <div class="search-box-new" id="form">
                 <form class="fm-search" action="#">
-                    <input id="searchInput" value="请输入关键词" maxlength="140" name="" class="source-search"> <a class="btn-search" href="javascript:;"><i class="icon icon-Search"></i></a>
+                    <input id="searchInput" value="请输入关键词" maxlength="140" name="" class="source-search"> <a
+                        class="btn-search" href="javascript:;"><i class="icon icon-Search"></i></a>
                 </form>
                 <a id="tosearch" href="javascript:;"><i class="iconfont icon_searchbtn"></i></a>
             </div>
@@ -107,111 +108,197 @@
             <div class="listwrapper sidemenu" id="list-wrapper">
                 <dl id="list" class="menu-item">
                     <dd>
-                        <a name="dashboard" href="/op-console-global/dashboard"><i class="iconfont icon_dashboard"></i><span class="txt">总览</span></a>
-                    </dd><dd>
-                    <a name="vm" href="/op-console-global/subsystem?type=vm"><i class="iconfont icon_vm"></i><span class="txt">云主机</span></a>
-                </dd><dd>
-                    <a name="vmbackup" href="/op-console-global/subsystem?type=vmbackup"><i class="iconfont icon_vmbackup"></i><span class="txt">云主机备份</span></a>
-                </dd><dd>
-                    <a name="images" href="/op-console-global/subsystem?type=images"><i class="iconfont icon_vmimage"></i><span class="txt">云主机镜像</span></a>
-                </dd><dd>
-                    <a name="securitygroup" href="/op-console-global/subsystem?type=securitygroup"><i class="iconfont icon_securitygroup"></i><span class="txt">安全组</span></a>
-                </dd><dd>
-                    <a name="keypair" href="/op-console-global/subsystem?type=keypair"><i class="iconfont icon_keypair"></i><span class="txt">SSH密钥</span></a>
-                </dd><dd>
-                    <a name="autoscaling" href="/op-console-global/subsystem?type=autoscaling"><i class="iconfont icon_autoscaling"></i><span class="txt">弹性伸缩</span></a>
-                </dd><dd>
-                    <a name="ceph" href="/op-console-global/subsystem?type=ceph"><i class="iconfont icon_ons"></i><span class="txt">云存储</span></a>
-                </dd><dd>
-                    <a name="cbs" href="/op-console-global/subsystem?type=cbs"><i class="iconfont icon_cbs"></i><span class="txt">容量型云硬盘</span></a>
-                </dd><dd>
-                    <a name="pbs" href="/op-console-global/subsystem?type=pbs"><i class="iconfont icon_pbs"></i><span class="txt">性能型云硬盘</span></a>
-                </dd><dd>
-                    <a name="bsbackup" href="/op-console-global/subsystem?type=bsbackup"><i class="iconfont icon_pbs_backup"></i><span class="txt">云硬盘备份</span></a>
-                </dd><dd>
-                    <a name="ip" href="/op-console-global/subsystem?type=ip"><i class="iconfont icon_ip"></i><span class="txt">弹性公网IP</span></a>
-                </dd><dd>
-                    <a name="network" href="/op-console-global/subsystem?type=network"><i class="iconfont icon_network"></i><span class="txt">子网</span></a>
-                </dd><dd>
-                    <a name="router" href="/op-console-global/subsystem?type=router"><i class="iconfont icon_router"></i><span class="txt">路由</span></a>
-                </dd><dd>
-                    <a name="vport" href="/op-console-global/subsystem?type=vport"><i class="iconfont icon_vport"></i><span class="txt">虚拟网卡</span></a>
-                </dd><dd>
-                    <a name="elb" href="/op-console-global/subsystem?type=elb"><i class="iconfont icon_slb"></i><span class="txt">弹性负载均衡</span></a>
-                </dd><dd>
-                    <a name="ipsecvpn" href="/op-console-global/subsystem?type=ipsecvpn"><i class="iconfont icon_IPSecVPN"></i><span class="txt">IPSecVPN</span></a>
-                </dd><dd>
-                    <a name="firewall" href="/op-console-global/subsystem?type=firewall"><i class="iconfont icon_firewall"></i><span class="txt">云防火墙</span></a>
-                </dd><dd>
-                    <a name="hsc" href="/op-console-global/subsystem?type=hsc"><i class="iconfont icon_highway"></i><span class="txt">云专线</span></a>
-                </dd><dd>
-                    <a name="mpls" href="/op-console-global/subsystem?type=mpls"><i class="iconfont icon_mplsVPN"></i><span class="txt">MPLS VPN</span></a>
-                </dd><dd>
-                    <a name="havip" href="/op-console-global/subsystem?type=havip"><i class="iconfont icon_havip"></i><span class="txt">HA VIP</span></a>
-                </dd><dd>
-                    <a name="secdashboard" href="/op-console-global/subsystem?type=secdashboard"><i class="iconfont icon_dashboard"></i><span class="txt">安全视图</span></a>
-                </dd><dd>
-                    <a name="ddos" href="/op-console-global/subsystem?type=ddos"><i class="iconfont icon_DDos"></i><span class="txt">抗DDoS</span></a>
-                </dd><dd>
-                    <a name="ids" href="/op-console-global/subsystem?type=ids"><i class="iconfont icon_ids"></i><span class="txt">网络入侵检测</span></a>
-                </dd><dd>
-                    <a name="webview" href="/op-console-global/subsystem?type=webview"><i class="iconfont icon_webview"></i><span class="txt">Web漏洞检测</span></a>
-                </dd><dd>
-                    <a name="waf" href="/op-console-global/subsystem?type=waf"><i class="iconfont icon_waf"></i><span class="txt">Web应用防护</span></a>
-                </dd><dd>
-                    <a name="hostcheck" href="/op-console-global/subsystem?type=hostcheck"><i class="iconfont icon_hostcheck"></i><span class="txt">云主机安全</span></a>
-                </dd><dd>
-                    <a name="hadoop" href="/op-console-global/subsystem?type=hadoop"><i class="iconfont icon_hadoop"></i><span class="txt">大数据处理</span></a>
-                </dd><dd>
-                    <a name="datahouse" href="/op-console-global/subsystem?type=datahouse"><i class="iconfont icon_datahouse"></i><span class="txt">数据仓库</span></a>
-                </dd><dd>
-                    <a name="datamining" href="/op-console-global/subsystem?type=datamining"><i class="iconfont icon_datamining"></i><span class="txt">并行数据挖掘</span></a>
-                </dd><dd>
-                    <a name="rds" href="/op-console-global/subsystem?type=rds"><i class="iconfont icon_rds"></i><span class="txt">云数据库</span></a>
-                </dd><dd>
-                    <a name="template" href="/op-console-global/subsystem?type=template"><i class="iconfont icon_template"></i><span class="txt">模版编配</span></a>
-                </dd><dd>
-                    <a name="monitor" href="/op-console-global/subsystem?type=monitor"><i class="iconfont icon_cloudmonitor"></i><span class="txt">云监控</span></a>
-                </dd><dd>
-                    <a name="mts" href="/op-console-global/subsystem?type=mts"><i class="iconfont icon_transcoding"></i><span class="txt">媒体转码</span></a>
-                </dd><dd>
-                    <a name="app_manage" href="/op-console-global/subsystem?type=app_manage"><i class="iconfont icon_applicatin_manage"></i><span class="txt">应用管理</span></a>
-                </dd><dd>
-                    <a name="role_manage" href="/op-console-global/subsystem?type=role_manage"><i class="iconfont icon_role_manage"></i><span class="txt">角色管理</span></a>
-                </dd><dd>
-                    <a name="partner_manage" href="/op-console-global/subsystem?type=partner_manage"><i class="iconfont icon_partners_manage"></i><span class="txt">合作伙伴管理</span></a>
-                </dd><dd>
-                    <a id="oprationlog" name="operationlog" href="/op-console-global/subsystem?type=operationlog"><i class="iconfont icon_oprationlog"></i><span class="txt">操作日志</span></a>
-                </dd><dd><a name="departments_manage" href="/op-console-global/departments/orgs"><i class="iconfont icon_department"></i><span class="txt">部门管理</span></a></dd></dl>
+                        <a name="dashboard" href="/op-console-global/dashboard"><i
+                                class="iconfont icon_dashboard"></i><span class="txt">总览</span></a>
+                    </dd>
+                    <dd>
+                        <a name="vm" href="/op-console-global/subsystem?type=vm"><i class="iconfont icon_vm"></i><span
+                                class="txt">云主机</span></a>
+                    </dd>
+                    <dd>
+                        <a name="vmbackup" href="/op-console-global/subsystem?type=vmbackup"><i
+                                class="iconfont icon_vmbackup"></i><span class="txt">云主机备份</span></a>
+                    </dd>
+                    <dd>
+                        <a name="images" href="/op-console-global/subsystem?type=images"><i
+                                class="iconfont icon_vmimage"></i><span class="txt">云主机镜像</span></a>
+                    </dd>
+                    <dd>
+                        <a name="securitygroup" href="/op-console-global/subsystem?type=securitygroup"><i
+                                class="iconfont icon_securitygroup"></i><span class="txt">安全组</span></a>
+                    </dd>
+                    <dd>
+                        <a name="keypair" href="/op-console-global/subsystem?type=keypair"><i
+                                class="iconfont icon_keypair"></i><span class="txt">SSH密钥</span></a>
+                    </dd>
+                    <dd>
+                        <a name="autoscaling" href="/op-console-global/subsystem?type=autoscaling"><i
+                                class="iconfont icon_autoscaling"></i><span class="txt">弹性伸缩</span></a>
+                    </dd>
+                    <dd>
+                        <a name="ceph" href="/op-console-global/subsystem?type=ceph"><i
+                                class="iconfont icon_ons"></i><span class="txt">云存储</span></a>
+                    </dd>
+                    <dd>
+                        <a name="cbs" href="/op-console-global/subsystem?type=cbs"><i
+                                class="iconfont icon_cbs"></i><span class="txt">容量型云硬盘</span></a>
+                    </dd>
+                    <dd>
+                        <a name="pbs" href="/op-console-global/subsystem?type=pbs"><i
+                                class="iconfont icon_pbs"></i><span class="txt">性能型云硬盘</span></a>
+                    </dd>
+                    <dd>
+                        <a name="bsbackup" href="/op-console-global/subsystem?type=bsbackup"><i
+                                class="iconfont icon_pbs_backup"></i><span class="txt">云硬盘备份</span></a>
+                    </dd>
+                    <dd>
+                        <a name="ip" href="/op-console-global/subsystem?type=ip"><i class="iconfont icon_ip"></i><span
+                                class="txt">弹性公网IP</span></a>
+                    </dd>
+                    <dd>
+                        <a name="network" href="/op-console-global/subsystem?type=network"><i
+                                class="iconfont icon_network"></i><span class="txt">子网</span></a>
+                    </dd>
+                    <dd>
+                        <a name="router" href="/op-console-global/subsystem?type=router"><i
+                                class="iconfont icon_router"></i><span class="txt">路由</span></a>
+                    </dd>
+                    <dd>
+                        <a name="vport" href="/op-console-global/subsystem?type=vport"><i
+                                class="iconfont icon_vport"></i><span class="txt">虚拟网卡</span></a>
+                    </dd>
+                    <dd>
+                        <a name="elb" href="/op-console-global/subsystem?type=elb"><i
+                                class="iconfont icon_slb"></i><span class="txt">弹性负载均衡</span></a>
+                    </dd>
+                    <dd>
+                        <a name="ipsecvpn" href="/op-console-global/subsystem?type=ipsecvpn"><i
+                                class="iconfont icon_IPSecVPN"></i><span class="txt">IPSecVPN</span></a>
+                    </dd>
+                    <dd>
+                        <a name="firewall" href="/op-console-global/subsystem?type=firewall"><i
+                                class="iconfont icon_firewall"></i><span class="txt">云防火墙</span></a>
+                    </dd>
+                    <dd>
+                        <a name="hsc" href="/op-console-global/subsystem?type=hsc"><i class="iconfont icon_highway"></i><span
+                                class="txt">云专线</span></a>
+                    </dd>
+                    <dd>
+                        <a name="mpls" href="/op-console-global/subsystem?type=mpls"><i
+                                class="iconfont icon_mplsVPN"></i><span class="txt">MPLS VPN</span></a>
+                    </dd>
+                    <dd>
+                        <a name="havip" href="/op-console-global/subsystem?type=havip"><i
+                                class="iconfont icon_havip"></i><span class="txt">HA VIP</span></a>
+                    </dd>
+                    <dd>
+                        <a name="secdashboard" href="/op-console-global/subsystem?type=secdashboard"><i
+                                class="iconfont icon_dashboard"></i><span class="txt">安全视图</span></a>
+                    </dd>
+                    <dd>
+                        <a name="ddos" href="/op-console-global/subsystem?type=ddos"><i
+                                class="iconfont icon_DDos"></i><span class="txt">抗DDoS</span></a>
+                    </dd>
+                    <dd>
+                        <a name="ids" href="/op-console-global/subsystem?type=ids"><i
+                                class="iconfont icon_ids"></i><span class="txt">网络入侵检测</span></a>
+                    </dd>
+                    <dd>
+                        <a name="webview" href="/op-console-global/subsystem?type=webview"><i
+                                class="iconfont icon_webview"></i><span class="txt">Web漏洞检测</span></a>
+                    </dd>
+                    <dd>
+                        <a name="waf" href="/op-console-global/subsystem?type=waf"><i
+                                class="iconfont icon_waf"></i><span class="txt">Web应用防护</span></a>
+                    </dd>
+                    <dd>
+                        <a name="hostcheck" href="/op-console-global/subsystem?type=hostcheck"><i
+                                class="iconfont icon_hostcheck"></i><span class="txt">云主机安全</span></a>
+                    </dd>
+                    <dd>
+                        <a name="hadoop" href="/op-console-global/subsystem?type=hadoop"><i
+                                class="iconfont icon_hadoop"></i><span class="txt">大数据处理</span></a>
+                    </dd>
+                    <dd>
+                        <a name="datahouse" href="/op-console-global/subsystem?type=datahouse"><i
+                                class="iconfont icon_datahouse"></i><span class="txt">数据仓库</span></a>
+                    </dd>
+                    <dd>
+                        <a name="datamining" href="/op-console-global/subsystem?type=datamining"><i
+                                class="iconfont icon_datamining"></i><span class="txt">并行数据挖掘</span></a>
+                    </dd>
+                    <dd>
+                        <a name="rds" href="/op-console-global/subsystem?type=rds"><i
+                                class="iconfont icon_rds"></i><span class="txt">云数据库</span></a>
+                    </dd>
+                    <dd>
+                        <a name="template" href="/op-console-global/subsystem?type=template"><i
+                                class="iconfont icon_template"></i><span class="txt">模版编配</span></a>
+                    </dd>
+                    <dd>
+                        <a name="monitor" href="/op-console-global/subsystem?type=monitor"><i
+                                class="iconfont icon_cloudmonitor"></i><span class="txt">云监控</span></a>
+                    </dd>
+                    <dd>
+                        <a name="mts" href="/op-console-global/subsystem?type=mts"><i
+                                class="iconfont icon_transcoding"></i><span class="txt">媒体转码</span></a>
+                    </dd>
+                    <dd>
+                        <a name="app_manage" href="/op-console-global/subsystem?type=app_manage"><i
+                                class="iconfont icon_applicatin_manage"></i><span class="txt">应用管理</span></a>
+                    </dd>
+                    <dd>
+                        <a name="role_manage" href="/op-console-global/subsystem?type=role_manage"><i
+                                class="iconfont icon_role_manage"></i><span class="txt">角色管理</span></a>
+                    </dd>
+                    <dd>
+                        <a name="partner_manage" href="/op-console-global/subsystem?type=partner_manage"><i
+                                class="iconfont icon_partners_manage"></i><span class="txt">合作伙伴管理</span></a>
+                    </dd>
+                    <dd>
+                        <a id="oprationlog" name="operationlog" href="/op-console-global/subsystem?type=operationlog"><i
+                                class="iconfont icon_oprationlog"></i><span class="txt">操作日志</span></a>
+                    </dd>
+                    <dd><a name="departments_manage" href="/op-console-global/departments/orgs"><i
+                            class="iconfont icon_department"></i><span class="txt">部门管理</span></a></dd>
+                </dl>
             </div>
             <div class="menu-wrapper">
                 <!-- 完整菜单项起始  -->
                 <div class="sidemenu" id="menuLevel">
                     <dl class="menu-item no-sub">
                         <dt id="dashboard" class="ddClick">
-                            <a name="dashboard" href="/op-console-global/dashboard"><i class="iconfont icon_dashboard"></i><span class="txt">总览</span></a>
+                            <a name="dashboard" href="/op-console-global/dashboard"><i
+                                    class="iconfont icon_dashboard"></i><span class="txt">总览</span></a>
                         </dt>
                     </dl>
                     <dl class="menu-item has-sub">
-                        <dt><i class="iconfont icon_autoCompute"></i><span class="txt">弹性计算</span><span class="menu-arrow-up menu-arrow-down"></span></dt>
+                        <dt><i class="iconfont icon_autoCompute"></i><span class="txt">弹性计算</span><span
+                                class="menu-arrow-up menu-arrow-down"></span></dt>
                         <div class="sub-menu">
                             <dd>
-                                <a name="vm" href="/op-console-global/subsystem?type=vm" class=""><i class="iconfont icon_vm"></i><span class="txt">云主机</span></a>
+                                <a name="vm" href="/op-console-global/subsystem?type=vm" class=""><i
+                                        class="iconfont icon_vm"></i><span class="txt">云主机</span></a>
                             </dd>
                             <dd>
-                                <a name="vmbackup" href="/op-console-global/subsystem?type=vmbackup"><i class="iconfont icon_vmbackup"></i><span class="txt">云主机备份</span></a>
+                                <a name="vmbackup" href="/op-console-global/subsystem?type=vmbackup"><i
+                                        class="iconfont icon_vmbackup"></i><span class="txt">云主机备份</span></a>
                             </dd>
                             <dd>
-                                <a name="images" href="/op-console-global/subsystem?type=images"><i class="iconfont icon_vmimage"></i><span class="txt">云主机镜像</span></a>
+                                <a name="images" href="/op-console-global/subsystem?type=images"><i
+                                        class="iconfont icon_vmimage"></i><span class="txt">云主机镜像</span></a>
                             </dd>
                             <dd>
-                                <a name="securitygroup" href="/op-console-global/subsystem?type=securitygroup"><i class="iconfont icon_securitygroup"></i><span class="txt">安全组</span></a>
+                                <a name="securitygroup" href="/op-console-global/subsystem?type=securitygroup"><i
+                                        class="iconfont icon_securitygroup"></i><span class="txt">安全组</span></a>
                             </dd>
                             <dd>
-                                <a name="keypair" href="/op-console-global/subsystem?type=keypair"><i class="iconfont icon_keypair"></i><span class="txt">SSH密钥</span></a>
+                                <a name="keypair" href="/op-console-global/subsystem?type=keypair"><i
+                                        class="iconfont icon_keypair"></i><span class="txt">SSH密钥</span></a>
                             </dd>
                             <dd>
-                                <a name="autoscaling" href="/op-console-global/subsystem?type=autoscaling"><i class="iconfont icon_autoscaling"></i><span class="txt">弹性伸缩</span></a>
+                                <a name="autoscaling" href="/op-console-global/subsystem?type=autoscaling"><i
+                                        class="iconfont icon_autoscaling"></i><span class="txt">弹性伸缩</span></a>
                             </dd>
                             <!-- <dd>
                                 <a name="ecs" href="/op-console-global/subsystem?type=ecs"><i class="iconfont icon_ecs"></i><span class="txt">弹性容器</span></a>
@@ -220,228 +307,287 @@
                     </dl>
                     <dl class="menu-item has-sub">
                         <dt>
-                            <i class="iconfont icon_autoOns"></i><span class="txt">弹性存储</span><span class="menu-arrow-up"></span>
+                            <i class="iconfont icon_autoOns"></i><span class="txt">弹性存储</span><span
+                                class="menu-arrow-up"></span>
                         </dt>
                         <div class="sub-menu">
                             <dd>
-                                <a name="ceph" href="/op-console-global/subsystem?type=ceph"><i class="iconfont icon_ons"></i><span class="txt">云存储</span></a>
+                                <a name="ceph" href="/op-console-global/subsystem?type=ceph"><i
+                                        class="iconfont icon_ons"></i><span class="txt">云存储</span></a>
                             </dd>
                             <dd>
-                                <a name="cbs" href="/op-console-global/subsystem?type=cbs"><i class="iconfont icon_cbs"></i><span class="txt">容量型云硬盘</span></a>
+                                <a name="cbs" href="/op-console-global/subsystem?type=cbs"><i
+                                        class="iconfont icon_cbs"></i><span class="txt">容量型云硬盘</span></a>
                             </dd>
                             <dd>
-                                <a name="pbs" href="/op-console-global/subsystem?type=pbs"><i class="iconfont icon_pbs"></i><span class="txt">性能型云硬盘</span></a>
+                                <a name="pbs" href="/op-console-global/subsystem?type=pbs"><i
+                                        class="iconfont icon_pbs"></i><span class="txt">性能型云硬盘</span></a>
                             </dd>
                             <dd>
-                                <a name="bsbackup" href="/op-console-global/subsystem?type=bsbackup"><i class="iconfont icon_pbs_backup"></i><span class="txt">云硬盘备份</span></a>
-                            </dd>
-
-
-                        </div>
-                    </dl>
-                    <dl class="menu-item has-sub">
-                        <dt><i class="iconfont icon_cloudnet"></i><span class="txt">云网络</span><span class="menu-arrow-up"></span></dt>
-                        <div class="sub-menu">
-                            <dd>
-                                <a name="ip" href="/op-console-global/subsystem?type=ip"><i class="iconfont icon_ip"></i><span class="txt">弹性公网IP</span></a>
-                            </dd>
-                            <dd>
-                                <a name="network" href="/op-console-global/subsystem?type=network"><i class="iconfont icon_network"></i><span class="txt">子网</span></a>
-                            </dd>
-                            <dd>
-                                <a name="router" href="/op-console-global/subsystem?type=router"><i class="iconfont icon_router"></i><span class="txt">路由</span></a>
-                            </dd>
-                            <dd>
-                                <a name="vport" href="/op-console-global/subsystem?type=vport"><i class="iconfont icon_vport"></i><span class="txt">虚拟网卡</span></a>
-                            </dd>
-                            <dd>
-                                <a name="elb" href="/op-console-global/subsystem?type=elb"><i class="iconfont icon_slb"></i><span class="txt">弹性负载均衡</span></a>
-                            </dd>
-
-                            <dd>
-                                <a name="ipsecvpn" href="/op-console-global/subsystem?type=ipsecvpn"><i class="iconfont icon_IPSecVPN"></i><span class="txt">IPSecVPN</span></a>
-                            </dd>
-                            <dd>
-                                <a name="firewall" href="/op-console-global/subsystem?type=firewall"><i class="iconfont icon_firewall"></i><span class="txt">云防火墙</span></a>
-                            </dd>
-
-                            <dd>
-                                <a name="hsc" href="/op-console-global/subsystem?type=hsc"><i class="iconfont icon_highway"></i><span class="txt">云专线</span></a>
-                            </dd>
-                            <dd>
-                                <a name="mpls" href="/op-console-global/subsystem?type=mpls"><i class="iconfont icon_mplsVPN"></i><span class="txt">MPLS VPN</span></a>
-                            </dd>
-                            <dd>
-                                <a name="havip" href="/op-console-global/subsystem?type=havip"><i class="iconfont icon_havip"></i><span class="txt">HA VIP</span></a>
-                            </dd>
-                        </div>
-                    </dl>
-                    <dl class="menu-item has-sub">
-                        <dt><i class="iconfont icon_cloudsecurity"></i><span class="txt">云安全</span><span class="menu-arrow-up"></span></dt>
-                        <div class="sub-menu">
-                            <dd>
-                                <a name="secdashboard" href="/op-console-global/subsystem?type=secdashboard"><i class="iconfont icon_dashboard"></i><span class="txt">安全视图</span></a>
-                            </dd>
-                            <dd>
-                                <a name="ddos" href="/op-console-global/subsystem?type=ddos"><i class="iconfont icon_DDos"></i><span class="txt">抗DDoS</span></a>
-                            </dd>
-                            <dd>
-                                <a name="ids" href="/op-console-global/subsystem?type=ids"><i class="iconfont icon_ids"></i><span class="txt">网络入侵检测</span></a>
-                            </dd>
-                            <dd>
-                                <a name="webview" href="/op-console-global/subsystem?type=webview"><i class="iconfont icon_webview"></i><span class="txt">Web漏洞检测</span></a>
-                            </dd>
-                            <dd>
-                                <a name="waf" href="/op-console-global/subsystem?type=waf"><i class="iconfont icon_waf"></i><span class="txt">Web应用防护</span></a>
-                            </dd>
-                            <dd>
-                                <a name="hostcheck" href="/op-console-global/subsystem?type=hostcheck"><i class="iconfont icon_hostcheck"></i><span class="txt">云主机安全</span></a>
-                            </dd>
-                        </div>
-                    </dl>
-
-                    <dl class="menu-item has-sub">
-                        <dt><i class="iconfont icon_bigdataAnali"></i><span class="txt">大规模计算与分析</span><span class="menu-arrow-up"></span></dt>
-                        <div class="sub-menu">
-                            <dd>
-                                <a name="hadoop" href="/op-console-global/subsystem?type=hadoop"><i class="iconfont icon_hadoop"></i><span class="txt">大数据处理</span></a>
-                            </dd>
-                            <dd>
-                                <a name="datahouse" href="/op-console-global/subsystem?type=datahouse"><i class="iconfont icon_datahouse"></i><span class="txt">数据仓库</span></a>
-                            </dd>
-                            <dd>
-                                <a name="datamining" href="/op-console-global/subsystem?type=datamining"><i class="iconfont icon_datamining"></i><span class="txt">并行数据挖掘</span></a>
+                                <a name="bsbackup" href="/op-console-global/subsystem?type=bsbackup"><i
+                                        class="iconfont icon_pbs_backup"></i><span class="txt">云硬盘备份</span></a>
                             </dd>
 
 
                         </div>
                     </dl>
                     <dl class="menu-item has-sub">
-                        <dt><i class="iconfont icon_database"></i><span class="txt">数据库</span><span class="menu-arrow-up"></span></dt>
+                        <dt><i class="iconfont icon_cloudnet"></i><span class="txt">云网络</span><span
+                                class="menu-arrow-up"></span></dt>
                         <div class="sub-menu">
                             <dd>
-                                <a name="rds" href="/op-console-global/subsystem?type=rds"><i class="iconfont icon_rds"></i><span class="txt">云数据库</span></a>
+                                <a name="ip" href="/op-console-global/subsystem?type=ip"><i
+                                        class="iconfont icon_ip"></i><span class="txt">弹性公网IP</span></a>
+                            </dd>
+                            <dd>
+                                <a name="network" href="/op-console-global/subsystem?type=network"><i
+                                        class="iconfont icon_network"></i><span class="txt">子网</span></a>
+                            </dd>
+                            <dd>
+                                <a name="router" href="/op-console-global/subsystem?type=router"><i
+                                        class="iconfont icon_router"></i><span class="txt">路由</span></a>
+                            </dd>
+                            <dd>
+                                <a name="vport" href="/op-console-global/subsystem?type=vport"><i
+                                        class="iconfont icon_vport"></i><span class="txt">虚拟网卡</span></a>
+                            </dd>
+                            <dd>
+                                <a name="elb" href="/op-console-global/subsystem?type=elb"><i
+                                        class="iconfont icon_slb"></i><span class="txt">弹性负载均衡</span></a>
+                            </dd>
+
+                            <dd>
+                                <a name="ipsecvpn" href="/op-console-global/subsystem?type=ipsecvpn"><i
+                                        class="iconfont icon_IPSecVPN"></i><span class="txt">IPSecVPN</span></a>
+                            </dd>
+                            <dd>
+                                <a name="firewall" href="/op-console-global/subsystem?type=firewall"><i
+                                        class="iconfont icon_firewall"></i><span class="txt">云防火墙</span></a>
+                            </dd>
+
+                            <dd>
+                                <a name="hsc" href="/op-console-global/subsystem?type=hsc"><i
+                                        class="iconfont icon_highway"></i><span class="txt">云专线</span></a>
+                            </dd>
+                            <dd>
+                                <a name="mpls" href="/op-console-global/subsystem?type=mpls"><i
+                                        class="iconfont icon_mplsVPN"></i><span class="txt">MPLS VPN</span></a>
+                            </dd>
+                            <dd>
+                                <a name="havip" href="/op-console-global/subsystem?type=havip"><i
+                                        class="iconfont icon_havip"></i><span class="txt">HA VIP</span></a>
+                            </dd>
+                        </div>
+                    </dl>
+                    <dl class="menu-item has-sub">
+                        <dt><i class="iconfont icon_cloudsecurity"></i><span class="txt">云安全</span><span
+                                class="menu-arrow-up"></span></dt>
+                        <div class="sub-menu">
+                            <dd>
+                                <a name="secdashboard" href="/op-console-global/subsystem?type=secdashboard"><i
+                                        class="iconfont icon_dashboard"></i><span class="txt">安全视图</span></a>
+                            </dd>
+                            <dd>
+                                <a name="ddos" href="/op-console-global/subsystem?type=ddos"><i
+                                        class="iconfont icon_DDos"></i><span class="txt">抗DDoS</span></a>
+                            </dd>
+                            <dd>
+                                <a name="ids" href="/op-console-global/subsystem?type=ids"><i
+                                        class="iconfont icon_ids"></i><span class="txt">网络入侵检测</span></a>
+                            </dd>
+                            <dd>
+                                <a name="webview" href="/op-console-global/subsystem?type=webview"><i
+                                        class="iconfont icon_webview"></i><span class="txt">Web漏洞检测</span></a>
+                            </dd>
+                            <dd>
+                                <a name="waf" href="/op-console-global/subsystem?type=waf"><i
+                                        class="iconfont icon_waf"></i><span class="txt">Web应用防护</span></a>
+                            </dd>
+                            <dd>
+                                <a name="hostcheck" href="/op-console-global/subsystem?type=hostcheck"><i
+                                        class="iconfont icon_hostcheck"></i><span class="txt">云主机安全</span></a>
+                            </dd>
+                        </div>
+                    </dl>
+
+                    <dl class="menu-item has-sub">
+                        <dt><i class="iconfont icon_bigdataAnali"></i><span class="txt">大规模计算与分析</span><span
+                                class="menu-arrow-up"></span></dt>
+                        <div class="sub-menu">
+                            <dd>
+                                <a name="hadoop" href="/op-console-global/subsystem?type=hadoop"><i
+                                        class="iconfont icon_hadoop"></i><span class="txt">大数据处理</span></a>
+                            </dd>
+                            <dd>
+                                <a name="datahouse" href="/op-console-global/subsystem?type=datahouse"><i
+                                        class="iconfont icon_datahouse"></i><span class="txt">数据仓库</span></a>
+                            </dd>
+                            <dd>
+                                <a name="datamining" href="/op-console-global/subsystem?type=datamining"><i
+                                        class="iconfont icon_datamining"></i><span class="txt">并行数据挖掘</span></a>
+                            </dd>
+
+
+                        </div>
+                    </dl>
+                    <dl class="menu-item has-sub">
+                        <dt><i class="iconfont icon_database"></i><span class="txt">数据库</span><span
+                                class="menu-arrow-up"></span></dt>
+                        <div class="sub-menu">
+                            <dd>
+                                <a name="rds" href="/op-console-global/subsystem?type=rds"><i
+                                        class="iconfont icon_rds"></i><span class="txt">云数据库</span></a>
                             </dd>
                         </div>
                     </dl>
 
 
-
                     <dl class="menu-item has-sub">
-                        <dt><i class="iconfont icon_monitor"></i><span class="txt">管理与监控</span><span class="menu-arrow-up"></span></dt>
+                        <dt><i class="iconfont icon_monitor"></i><span class="txt">管理与监控</span><span
+                                class="menu-arrow-up"></span></dt>
                         <div class="sub-menu">
                             <dd>
-                                <a name="template" href="/op-console-global/subsystem?type=template"><i class="iconfont icon_template"></i><span class="txt">模版编配</span></a>
+                                <a name="template" href="/op-console-global/subsystem?type=template"><i
+                                        class="iconfont icon_template"></i><span class="txt">模版编配</span></a>
                             </dd>
                             <dd>
-                                <a name="monitor" href="/op-console-global/subsystem?type=monitor"><i class="iconfont icon_cloudmonitor"></i><span class="txt">云监控</span></a>
+                                <a name="monitor" href="/op-console-global/subsystem?type=monitor"><i
+                                        class="iconfont icon_cloudmonitor"></i><span class="txt">云监控</span></a>
                             </dd>
                         </div>
                     </dl>
 
 
                     <dl class="menu-item has-sub">
-                        <dt><i class="iconfont icon_vedioservice"></i><span class="txt">视频服务</span><span class="menu-arrow-up"></span></dt>
+                        <dt><i class="iconfont icon_vedioservice"></i><span class="txt">视频服务</span><span
+                                class="menu-arrow-up"></span></dt>
                         <div class="sub-menu">
                             <dd>
-                                <a name="mts" href="/op-console-global/subsystem?type=mts"><i class="iconfont icon_transcoding"></i><span class="txt">媒体转码</span></a>
+                                <a name="mts" href="/op-console-global/subsystem?type=mts"><i
+                                        class="iconfont icon_transcoding"></i><span class="txt">媒体转码</span></a>
                             </dd>
                         </div>
                     </dl>
 
                     <dl class="menu-item has-sub">
-                        <dt><i class="iconfont icon_saas_manage"></i><span class="txt">SaaS管理</span><span class="menu-arrow-up"></span></dt>
+                        <dt><i class="iconfont icon_saas_manage"></i><span class="txt">SaaS管理</span><span
+                                class="menu-arrow-up"></span></dt>
                         <div class="sub-menu">
                             <dd>
-                                <a name="app_manage" href="/op-console-global/subsystem?type=app_manage"><i class="iconfont icon_applicatin_manage"></i><span class="txt">应用管理</span></a>
+                                <a name="app_manage" href="/op-console-global/subsystem?type=app_manage"><i
+                                        class="iconfont icon_applicatin_manage"></i><span class="txt">应用管理</span></a>
                             </dd>
                             <dd>
-                                <a name="role_manage" href="/op-console-global/subsystem?type=role_manage"><i class="iconfont icon_role_manage"></i><span class="txt">角色管理</span></a>
+                                <a name="role_manage" href="/op-console-global/subsystem?type=role_manage"><i
+                                        class="iconfont icon_role_manage"></i><span class="txt">角色管理</span></a>
                             </dd>
                             <dd>
-                                <a name="partner_manage" href="/op-console-global/subsystem?type=partner_manage"><i class="iconfont icon_partners_manage"></i><span class="txt">合作伙伴管理</span></a>
+                                <a name="partner_manage" href="/op-console-global/subsystem?type=partner_manage"><i
+                                        class="iconfont icon_partners_manage"></i><span class="txt">合作伙伴管理</span></a>
                             </dd>
                         </div>
                     </dl>
                     <dl class="menu-item has-sub" id="warninglog">
-                        <dt><i class="iconfont icon_warnlog"></i><span class="txt">告警日志</span><span class="menu-arrow-up"></span></dt>
+                        <dt><i class="iconfont icon_warnlog"></i><span class="txt">告警日志</span><span
+                                class="menu-arrow-up"></span></dt>
                         <div class="sub-menu">
 
                             <dd>
-                                <a id="oprationlog" name="operationlog" href="/op-console-global/subsystem?type=operationlog"><i class="iconfont icon_oprationlog"></i><span class="txt">操作日志</span></a>
+                                <a id="oprationlog" name="operationlog"
+                                   href="/op-console-global/subsystem?type=operationlog"><i
+                                        class="iconfont icon_oprationlog"></i><span class="txt">操作日志</span></a>
                             </dd>
                         </div>
                     </dl>
                     <dl class="menu-item no-sub">
-                        <dt id="menu_departments"><a name="departments_manage" href="/op-console-global/departments/orgs"><i class="iconfont icon_department"></i><span class="txt">部门管理</span></a></dt>
+                        <dt id="menu_departments"><a name="departments_manage"
+                                                     href="/op-console-global/departments/orgs"><i
+                                class="iconfont icon_department"></i><span class="txt">部门管理</span></a></dt>
                     </dl>
-
-
 
 
                 </div>
                 <!-- 完整菜单项结束 -->
             </div>
-            <div class="ps-scrollbar-x-rail" style="width: 200px; display: none; left: 0px; bottom: 3px;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; height: 950px; display: none; right: 3px;"><div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div></div></div>
-        <div class="pane">
-    <div class="rds-tab">
-        <a href="index.html" id="yibiaoban">仪表盘</a>
-        <a href="rdsInstance.html" id="danshili">单实例</a>
-        <a href="rdsCluster.html" id="jiqun">集群</a>
-    </div>
-    <div class="rds-content" id="rds-content-2">
-        <div class="rds-content-4-head">
-            <form class="form-inline" style="display:inline-block;">
-                <div class="form-group">
-                    <a type="button" href="https://ecloud.10086.cn/product/buy/rdb" target="_blank" class="rds-btn-instance">
-                        <span class="btn-icon" id="new-buy"></span>
-                        订购
-                    </a>
-                    <select id="rds-content-guolv" style="width:150px;padding-left:5px;margin-right:5px;">
-                        <option>所有的实例</option>
-                        <option>活动的实例</option>
-                        <option>非活动的实例</option>
-                    </select>
-                    <input type="submit" class="rds-btn-instance refresh-btn" id="refresh_btn" value=" "/>
-                </div>
-            </form>
+            <div class="ps-scrollbar-x-rail" style="width: 200px; display: none; left: 0px; bottom: 3px;">
+                <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+            </div>
+            <div class="ps-scrollbar-y-rail" style="top: 0px; height: 950px; display: none; right: 3px;">
+                <div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div>
+            </div>
         </div>
-        <div class="rds-content-2-body" id="rds-content-2-body">
-            <div class="content-instance-title row">
-                <p class="col-md-2 " style="width:12.6666%">云主机名</p>
-                <p class="col-md-1 db-engine" style="width:12.3333%">状态</p>
-                <p class="col-md-1 ">数据库版本</p>
-                <p class="col-md-1" style="width:18%">主机</p>
-                <p class="col-md-1" style="width:12.3333%">配置</p>
-                <p class="col-md-1">云硬盘大小</p>
-                <p class="col-md-1">主备状态</p>
-                <!--   <p class="col-md-1">数据库引擎</p>  -->
-            </div><!--div class="content-instance-title"结束 -->
-            <div class="rds-content-2-body-body" >
-                <div mytitle="master" class="row config-row" name="test111" id="test111" title="ACTIVE" style="display: block;">
-                    <a href="test11.html" class="instance-id">
-                        <p class="col-md-2" style="width:12.6666%">test111</p></a>
-                    <p class="col-md-1" style="width:12.3333%">ACTIVE</p>
-                    <p class="col-md-1">mysql5.5</p>
-                    <p style="width:18%" class="col-md-1">192.168.172.3</p>
-                    <p style="width:12.3333%" class="col-md-1 instance_name386471d2-8ad8-407c-a2e6-f6c85110dabc">rds.tiny</p>
-                    <p class="col-md-1">20GB</p>
-                    <p class="col-md-1">master</p>
+        <div class="pane">
+            <div class="rds-tab">
+                <a href="index.html" id="yibiaoban">仪表盘</a>
+                <a href="rdsInstance.html" class="rds-tab-active" id="danshili">单实例</a>
+                <a href="rdsCluster.html" id="jiqun">集群</a>
+            </div>
+            <div class="rds-content" id="rds-content-2">
+                <div class="rds-content-4-head">
+                    <form class="form-inline" style="display:inline-block;">
+                        <div class="form-group">
+                            <a type="button" href="https://ecloud.10086.cn/product/buy/rdb" target="_blank"
+                               class="rds-btn-instance">
+                                <span class="btn-icon" id="new-buy"></span>
+                                订购
+                            </a>
+                            <select id="rds-content-guolv" style="width:150px;padding-left:5px;margin-right:5px;">
+                                <option>所有的实例</option>
+                                <option>活动的实例</option>
+                                <option>非活动的实例</option>
+                            </select>
+                            <input type="submit" class="rds-btn-instance refresh-btn" id="refresh_btn" value=" "/>
+                        </div>
+                    </form>
                 </div>
-                <div mytitle="master" class="row config-row" name="test222" id="test222" title="ACTIVE" style="display: block;">
-                    <a href="test11.html" class="instance-id">
-                        <p class="col-md-2" style="width:12.6666%">test111</p></a>
-                    <p class="col-md-1" style="width:12.3333%">ACTIVE</p>
-                    <p class="col-md-1">mysql5.5</p>
-                    <p style="width:18%" class="col-md-1">192.168.172.3</p>
-                    <p style="width:12.3333%" class="col-md-1 instance_name386471d2-8ad8-407c-a2e6-f6c85110dabc">rds.tiny</p>
-                    <p class="col-md-1">20GB</p>
-                    <p class="col-md-1">master</p>
+                <div class="rds-content-2-body" id="rds-content-2-body">
+                    <div class="content-instance-title row">
+                        <p class="col-md-2 " style="width:12.6666%">云主机名</p>
+
+                        <p class="col-md-1 db-engine" style="width:12.3333%">状态</p>
+
+                        <p class="col-md-1 ">数据库版本</p>
+
+                        <p class="col-md-1" style="width:18%">主机</p>
+
+                        <p class="col-md-1" style="width:12.3333%">配置</p>
+
+                        <p class="col-md-1">云硬盘大小</p>
+
+                        <p class="col-md-1">主备状态</p>
+                        <!--   <p class="col-md-1">数据库引擎</p>  -->
+                    </div>
+                    <!--div class="content-instance-title"结束 -->
+                    <div class="rds-content-2-body-body">
+                        <div mytitle="master" class="row config-row" name="test111" id="test111" title="ACTIVE"
+                             style="display: block;">
+                            <a href="instance_detail.html" class="instance-id">
+                                <p class="col-md-2" style="width:12.6666%">test111</p></a>
+
+                            <p class="col-md-1" style="width:12.3333%">ACTIVE</p>
+
+                            <p class="col-md-1">mysql5.5</p>
+
+                            <p style="width:18%" class="col-md-1">192.168.172.3</p>
+
+                            <p style="width:12.3333%"
+                               class="col-md-1 instance_name386471d2-8ad8-407c-a2e6-f6c85110dabc">rds.tiny</p>
+
+                            <p class="col-md-1">20GB</p>
+
+                            <p class="col-md-1">master</p>
+
+                            <p class="btn-group col-md-2 btn-group-a" style="width:19.6666%">
+                                <a href="javascript:void(0)" name="ACTIVE" class="zhongzhi" id="zhongzhi">查看订单</a>
+                                <a href="javascript:void(0)" name="ACTIVE" class="zhongzhi" id="zhongzhi">重启</a>
+                                <a href="javascript:void(0)" name="ACTIVE" class="zhongzhi" id="zhongzhi">只读实例</a>
+                                <a href="javascript:void(0)" name="ACTIVE" class="zhongzhi" id="zhongzhi">监控</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
     </div>
 </div>
 </body>

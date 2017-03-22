@@ -62,7 +62,7 @@ input[type=text]:hover, input[type=password]:hover, input[type=search]:hover {
     display: inline-block;
     background-color: #2d92ca;
 }
-/*???????žD?*/
+/*???????ï¿½D?*/
 .rds-tab{
     height:66px;
     width: 100%;
@@ -113,12 +113,12 @@ input[type=text]:hover, input[type=password]:hover, input[type=search]:hover {
 }
 /*???????????*/
 
-/*????????žD?*/
+/*????????ï¿½D?*/
 #create_config_form li{
     margin-left:0;
 }
 .rds-content-4-head,.rds-content-5-head,.rds-content-monitor-head{
-    padding:20px 0 19px 0;
+    padding: 30px 0 40px 0;
 }
 .rds-btn-instance{
     border-radius: 2px;
@@ -159,7 +159,7 @@ input[type=text]:hover, input[type=password]:hover, input[type=search]:hover {
     text-align: left;
     border-bottom: 1px solid #E2E2E2;
 }
-.config-row:hover,.content-backup:hover,.content-privilege:hover,.config-config-row:hover{
+.config-row:hover,.content-backup:hover,.content-privilege:hover,.config-config-row:hover,.cluster-row:hover{
     background-color:rgb(229, 240, 250);
 }
 .config-row p,.content-privilege p {
@@ -277,7 +277,7 @@ input[type=text]:hover, input[type=password]:hover, input[type=search]:hover {
     margin-left:2px;
 }
 /*????????????*/
-/*?????žD?*/
+/*?????ï¿½D?*/
 .rds-movebox {
     background-color: #f1f5f8;
     left: 2000px;
@@ -410,7 +410,7 @@ input[type=text]:hover, input[type=password]:hover, input[type=search]:hover {
     height:40px;
     line-height:40px;
 }
-/*movebox?§Ó????????*/
+/*movebox?ï¿½ï¿½????????*/
 #rds-contentsm-4 input {
     float: left;
     margin-right: 12px;
@@ -465,7 +465,7 @@ input[type=text]:hover, input[type=password]:hover, input[type=search]:hover {
 	text-align:center;
 } */
 /*?????????*/
-/*??????žD?*/
+/*??????ï¿½D?*/
 .backupsearch-button{
     background: url(../images/rds/rds_search.png) center no-repeat;
     width:33px;
@@ -716,7 +716,7 @@ input[type=text]:hover, input[type=password]:hover, input[type=search]:hover {
 }
 
 
-/*ÐÂÔöuiÐÞ¸Ä*/
+/*ï¿½ï¿½ï¿½ï¿½uiï¿½Þ¸ï¿½*/
 .index_chart{
     display:inline-block;
     border-radius: 2px;
@@ -935,8 +935,25 @@ span.icon {
 #index_chart3_body{
     background:transparent url(../images/3.png) no-repeat scroll center center;
 }
+.btn-group-a a{
+    color: #2a6496;
+}
+.cluster-row p{
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+}
+.cluster-row p span{
+    vertical-align: middle;
+    line-height: 20px;
+}
+.cluster-row{
+    border-bottom: 1px solid #E2E2E2;
 
-
+}
+.cluster-row .btn-group a {
+    margin-right: 10px;
+}
 
 
 

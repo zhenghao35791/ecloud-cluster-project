@@ -1,3 +1,4 @@
+/*
 var  domainurlgloabl=null;
 function getdomain(){
 	
@@ -17,4 +18,4 @@ function getdomain(){
 $(function() {
 	$("#login_user").html($.cookie("bcop_uname"));
 	getdomain();
-});
+});*/

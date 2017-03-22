@@ -1,5 +1,7 @@
+/*
 
-    //tabÇÐ»»´úÂë
+    //tabï¿½Ð»ï¿½ï¿½ï¿½ï¿½ï¿½
   $(".rds-table-wap .rds-tab a").click(function(){
     $(this).addClass('rds-tab-active').siblings().removeClass('rds-tab-active');
   });
+*/

@@ -387,7 +387,7 @@
     <div class="rds-tab">
         <a href="index.html" id="yibiaoban">仪表盘</a>
         <a href="rdsInstance.html" id="danshili">单实例</a>
-        <a href="rdsCluster.html" id="jiqun">集群</a>
+        <a href="rdsCluster.html" class="rds-tab-active" id="jiqun">集群</a>
     </div>
     <div class="rds-content" id="rds-content-2">
         <div class="rds-content-4-head">
@@ -408,35 +408,57 @@
         </div>
         <div class="rds-content-2-body" id="rds-content-2-body">
             <div class="content-instance-title row">
-                <p class="col-md-2 " style="width:12.6666%">云主机名</p>
-                <p class="col-md-1 db-engine" style="width:12.3333%">状态</p>
+                <p class="col-md-2 ">集群名</p>
+                <p class="col-md-2 ">集群任务</p>
+                <p class="col-md-1 db-engine" >主机数</p>
+                <p class="col-md-2">机器ip列表</p>
                 <p class="col-md-1 ">数据库版本</p>
-                <p class="col-md-1" style="width:18%">主机</p>
-                <p class="col-md-1" style="width:12.3333%">配置</p>
-                <p class="col-md-1">云硬盘大小</p>
-                <p class="col-md-1">主备状态</p>
+                <p class="col-md-1" >配置</p>
+                <p class="col-md-3">动作</p>
                 <!--   <p class="col-md-1">数据库引擎</p>  -->
             </div><!--div class="content-instance-title"结束 -->
             <div class="rds-content-2-body-body" >
-                <div mytitle="master" class="row config-row" name="test111" id="test111" title="ACTIVE" style="display: block;">
-                    <a href="test11.html" class="instance-id">
-                        <p class="col-md-2" style="width:12.6666%">test111</p></a>
-                    <p class="col-md-1" style="width:12.3333%">ACTIVE</p>
-                    <p class="col-md-1">mysql5.5</p>
-                    <p style="width:18%" class="col-md-1">192.168.172.3</p>
-                    <p style="width:12.3333%" class="col-md-1 instance_name386471d2-8ad8-407c-a2e6-f6c85110dabc">rds.tiny</p>
-                    <p class="col-md-1">20GB</p>
+                <div mytitle="master" class="row cluster-row" name="test222" id="test222" title="ACTIVE"
+                     style="display: block;">
+                    <a href="cluster_detail.html" class="instance-id">
+                        <p class="col-md-2" >test111</p>
+                    </a>
+                    <p class="col-md-2" >创建中</p>
+                    <p class="col-md-1">3个</p>
+                    <p class="col-md-2">
+                        <span style="display: block">192.168.172.3</span>
+                        <span style="display: block">192.168.172.3</span>
+                        <span style="display: block">192.168.172.3</span>
+                    </p>
+                    <p class="col-md-1">mysql 5.5</p>
                     <p class="col-md-1">master</p>
+                    <p class="btn-group col-md-3 btn-group-a">
+                        <a href="javascript:void(0)" name="ACTIVE" class="zhongzhi" id="zhongzhi">查看订单</a>
+                        <a href="javascript:void(0)" name="ACTIVE" class="zhongzhi" id="zhongzhi">重启</a>
+                        <a href="javascript:void(0)" name="ACTIVE" class="zhongzhi" id="zhongzhi">只读实例</a>
+                        <a href="javascript:void(0)" name="ACTIVE" class="zhongzhi" id="zhongzhi">监控</a>
+                    </p>
                 </div>
-                <div mytitle="master" class="row config-row" name="test222" id="test222" title="ACTIVE" style="display: block;">
-                    <a href="test11.html" class="instance-id">
-                        <p class="col-md-2" style="width:12.6666%">test111</p></a>
-                    <p class="col-md-1" style="width:12.3333%">ACTIVE</p>
-                    <p class="col-md-1">mysql5.5</p>
-                    <p style="width:18%" class="col-md-1">192.168.172.3</p>
-                    <p style="width:12.3333%" class="col-md-1 instance_name386471d2-8ad8-407c-a2e6-f6c85110dabc">rds.tiny</p>
-                    <p class="col-md-1">20GB</p>
+                <div mytitle="master" class="row cluster-row" name="test222" id="test222" title="ACTIVE"
+                     style="display: block;">
+                    <a href="cluster_detail.html" class="instance-id">
+                        <p class="col-md-2" >instance_cluster</p>
+                    </a>
+                    <p class="col-md-2" >运行中</p>
+                    <p class="col-md-1">3个</p>
+                    <p class="col-md-2">
+                        <span style="display: block">192.168.172.3</span>
+                        <span style="display: block">192.168.172.3</span>
+                        <span style="display: block">192.168.172.3</span>
+                    </p>
+                    <p class="col-md-1">mysql 5.5</p>
                     <p class="col-md-1">master</p>
+                    <p class="btn-group col-md-3 btn-group-a">
+                        <a href="javascript:void(0)" name="ACTIVE" class="zhongzhi" id="zhongzhi">查看订单</a>
+                        <a href="javascript:void(0)" name="ACTIVE" class="zhongzhi" id="zhongzhi">重启</a>
+                        <a href="javascript:void(0)" name="ACTIVE" class="zhongzhi" id="zhongzhi">只读实例</a>
+                        <a href="javascript:void(0)" name="ACTIVE" class="zhongzhi" id="zhongzhi">监控</a>
+                    </p>
                 </div>
             </div>
         </div>
